@@ -189,13 +189,11 @@
   \begin{block}{Introduction}
       % The successive approximation register (SAR) analog-to-digital converter (ADC) has emerged as a dominant architecture for low-power applications. This is attributed to its superior energy efficiency, compact form factor, and seamless compatibility with technology scaling. Nevertheless, recent advancements have notably focused on refining the switching logic to surpass the existing limits in power consumption. Past works such as \cite{Yuan12, Sanyal13, Zhu13, Sanyal13b, Chen14} have demonstrated energy saving beyond the \SI{95}{\percent} with respect to the conventional switching but at the expense of variable common-mode voltages at the comparator inputs. As a consequence, a special comparator design is necessary, restricting the effective resolution. Alternative solutions have addressed this limitation; however, they come with trade-offs such as doubling the capacitor area \cite{Zhu10}, incurring substantial switching energy \cite{Rahimi14}, or halving the input signal amplitude \cite{Xin21}. The methods in \cite{Ding18} and \cite{Yu23} leverage bridge capacitor designs to achieve significant area reduction, yet implementing this solution requires careful layout to minimize undesired couplings around the attenuation capacitor which could otherwise limit the linearity. Remarkable energy savings exceeding \SI{98}{\percent} have been demonstrated in prior works \cite{Wu17, Li20, Hu22, Momeni20} while maintaining common-mode voltage variations and overall performance; however, with recent advancements, it is now achievable to reach \SI{100}{\percent} energy savings. An example of this progress can be found in \cite{Akbari19}; although the capacitive DAC employed in this approach is larger compared to the other techniques discussed here. Similarly, \cite{Yousefi18} accomplishes zero average energy and a reduced capacitance area of \SI{87}{\percent}; nonetheless, the implementation of the switching network and the associated digital logic is complex and requires extra clock cycles to perform the conversion.
 
-    The switching scheme presented here achieves a zero average switching energy with a fully-differential input signal and requires only one clock period per resolved bit. While architectures \cite{Zhu10,Rahimi14,Xin21} and \cite{Wu17,Li20,Hu22}  claim to maintain a constant common-mode voltage, they actually experience a variation when discriminating the least significant bit (LSB). In contrast, the proposed solution introduces a marginal shift for only two specific digital codes during the last transition, representing less than \SI{1}{\percent} of the total amount of cases when considering reasonable resolutions (i.e.,\,$\geq$\,9\,bit).
-    
-    \begin{figure}[t] \centering
-    	\input{tex/labels.tex}
-    	\caption{Generic $N$-bit SAR ADC with labeled binary weighted capacitors and voltages that are set by the SAR logic.}
-        \label{fig:labels}
-    \end{figure}
+% The switching scheme presented here achieves a zero average switching energy with a fully-differential input signal and requires only one clock period per resolved bit. While architectures \cite{Zhu10,Rahimi14,Xin21} and \cite{Wu17,Li20,Hu22}  claim to maintain a constant common-mode voltage, they actually experience a variation when discriminating the least significant bit (LSB). In contrast, the proposed solution introduces a marginal shift for only two specific digital codes during the last transition, representing less than \SI{1}{\percent} of the total amount of cases when considering reasonable resolutions (i.e.,\,$\geq$\,9\,bit).
+
+The successive approximation register (SAR) analog-to-digital converter (ADC) has emerged as a dominant architecture for low-power applications. This is attributed to its superior energy efficiency, compact form factor, and seamless compatibility with technology scaling. Recent advancements have notably focused on refining the switching logic. Remarkable energy savings exceeding \SI{98}{\percent} have been demonstrated in prior works \cite{Wu17, Li20, Hu22, Momeni20} while maintaining common-mode voltage variations and overall performance. However, with recent advancements, it is now achievable to reach \SI{100}{\percent} energy savings at the cost of a large capacitive DAC as in \cite{Akbari19} or complexity and extra clock cycles as in \cite{Yousefi18}.    
+% 
+The proposed switching scheme achieves a zero average switching energy with a fully-differential input signal, an almost constant common-mode voltage and requires only one clock period per resolved bit.
 
   \end{block}
 
@@ -235,14 +233,20 @@
     \begin{equation} \label{eq:e}
         E_{k} = C V_{0,k} \left( \Delta V_{0,k} - \Delta v_{k} \right) + \sum_{i=0}^{N-3} 2^i C V_{i+1,k} \left( \Delta V_{i+1,k} - \Delta v_{k} \right) \ .
     \end{equation}
-    
-    
+    Some main observations can be derived from this: 
     \begin{enumerate}
       \item Operating multiple switches simultaneously may actually result in lower energy consumption compared to using a single switch \cite{Xin21}.
       \item Removing the largest capacitors on the  CDAC has a notable impact on energy usage, particularly during the initial conversions due to the binary weighting configuration\,\cite{Yuan12, Sanyal13, Zhu13}. 
       \item If $V_{i,\text{k}} = 0$ (i.e., ground or negative reference), its contribution to the total switching energy becomes negligible. 
       \item When capacitor terminals are merged in a specific sequence as demonstrated in \cite{Xin21} and \cite{Wu17}, their connection becomes independent of voltage references, resulting in zero energy.
     \end{enumerate}
+
+    \begin{figure}[t] \centering
+    	\input{tex/labels.tex}
+    	\caption{Generic $N$-bit SAR ADC with labeled binary weighted capacitors and voltages that are set by the SAR logic.}
+        \label{fig:labels}
+    \end{figure}
+
 
 \end{block}
 
@@ -259,6 +263,7 @@
     \begin{equation} \label{eq:et}
     	E(N) = - C V^2 \left( 2^{-3} + 2^{-N-1} + 2^{-2N+1} \right) . 
     \end{equation}
+    Negative energies $E(N)$ are possible when there is a positive switching energy.
 
 \end{block}
 
@@ -312,7 +317,7 @@
     
     \begin{block}{Comparison}
 
-    This section provides a comparison between the proposed switching scheme of \Cref{fig:scheme} and state-of-the-art 10-bit SAR ADC solutions. \label{sec:comp}\Cref{tab:comp} summarizes the performance metrics, focusing on recent techniques that exhibit exceptionally low energy switching: $E/(C V^2)<32$. The comparison specifically emphasizes architectures utilizing binary weighted configurations without the use of bridge capacitor techniques and, similar to other schemes considered in this analysis, the parasitic capacitors and energy consumed during the reset phase are not taken into account. The conventional SAR is used as the standard reference to assess energy and area efficiency for all techniques. It is worth mentioning that the switching energy is influenced by the input analog value. While \Cref{tab:comp} displays the expected switching energy of multiple switchig techniques assuming all input values are equally probable, \Cref{fig:ed} shows $E(D)$, i.e., the energy for each digital output code.
+    This section provides a comparison between the proposed switching scheme of \Cref{fig:scheme} and state-of-the-art 10-bit SAR ADC solutions. \label{sec:comp}\Cref{tab:comp} compares the performance metrics against techniques with low energy switching: $E/(C V^2)<32$. The comparison specifically emphasizes architectures utilizing binary weighted configurations without the use of bridge capacitor techniques. Similar to other schemes considered in this analysis, parasitic capacitors and energy consumed during the reset phase are not considered. The conventional SAR is used as the standard reference. \Cref{tab:comp} displays the expected switching energy of multiple switchig techniques and \Cref{fig:ed} shows $E(D)$, i.e., the energy for each digital output code.
     % highlights the comparison of a 10-bit SAR ADC across different techniques and with the actual accumulated switching energy,
     
     \vspace{0.2cm}
@@ -344,7 +349,7 @@
      \begin{figure}[t] \centering
        \begin{tikzpicture}
     	   % red, blue, green, darkgray, orange, purple, brown, black, gray, olive, teal
-        \begin{axis}[width=16cm, height=10cm, legend style={at={(0,1.0)}, legend columns=6, anchor=south west}, ylabel={\textit{Switching Energy ($E / C V^2$)}}, xlabel={\textit{Output Code ($D$)}}, grid=major, enlarge x limits=false, every axis y label/.style={at={(ticklabel cs:0.5)},rotate=90,anchor=near ticklabel}, mark size = 1.5pt ]
+        \begin{axis}[width=16cm, height=9cm, legend style={at={(0,1.0)}, legend columns=6, anchor=south west}, ylabel={\textit{Switching Energy ($E / C V^2$)}}, xlabel={\textit{Output Code ($D$)}}, grid=major, enlarge x limits=false, every axis y label/.style={at={(ticklabel cs:0.5)},rotate=90,anchor=near ticklabel}, mark size = 1.5pt ]
     
             \addplot[mark=pentagon, mark size = 1.5pt, color=gray] table [each nth point=7, x=D, y={Chen}, col sep=comma] {\datasetED}; \addlegendentry{\scriptsize\cite{Chen14}}
             %
@@ -382,6 +387,8 @@
   % \end{alertblock}
 
   \begin{block}{Summary and future work}
+      A simple SAR ADC with zero average switching energy has been introduced. The proposed scheme keeps a constant common-mode voltage, minimizes the capacitor area and requires only one clock per transition.
+      Each individual cell of the SAR is prepared for implementation at the transistor level, and as part of future development, exploration of a 28nm CMOS process is underway.
   \end{block}
 
   \begin{block}{Acknowledgements}

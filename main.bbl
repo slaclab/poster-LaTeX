@@ -19,6 +19,490 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{Wu17}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a39566b42e8068ac7898af3edc0d015d}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Aidong},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c66823031a6ec935277e1404f6e8b4e8}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jianhui},
+           giveni={J\bibinitperiod}}}%
+        {{hash=733256c2452217b6cec8912fa1abf4eb}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media {LLC}}%
+      }
+      \strng{namehash}{4c8b1c26324fbbd8c8b8e9c0ab4471a3}
+      \strng{fullhash}{4c8b1c26324fbbd8c8b8e9c0ab4471a3}
+      \strng{bibnamehash}{4c8b1c26324fbbd8c8b8e9c0ab4471a3}
+      \strng{authorbibnamehash}{4c8b1c26324fbbd8c8b8e9c0ab4471a3}
+      \strng{authornamehash}{4c8b1c26324fbbd8c8b8e9c0ab4471a3}
+      \strng{authorfullhash}{4c8b1c26324fbbd8c8b8e9c0ab4471a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Analog Integrated Circuits and Signal Processing}
+      \field{month}{11}
+      \field{number}{2}
+      \field{title}{Energy-efﬁcient switching scheme for ultra-low voltage SAR ADC}
+      \field{volume}{90}
+      \field{year}{2017}
+      \field{pages}{507\bibrangedash 511}
+      \range{pages}{5}
+    \endentry
+    \entry{Li20}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6319b1782c97a1ea83590bf2347598b0}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Junhui},
+           giveni={J\bibinitperiod}}}%
+        {{hash=86d8cd66cb62928ca1ec636d8cd2e11c}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=4a3f33ee766df199ab94dd8945d771d3}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Linlin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=c66823031a6ec935277e1404f6e8b4e8}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jianhui},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media {LLC}}%
+      }
+      \strng{namehash}{95c4cf18ede8f4e791cc502cb2bf480d}
+      \strng{fullhash}{f6e0b3056f3341e87820b1e995213309}
+      \strng{bibnamehash}{f6e0b3056f3341e87820b1e995213309}
+      \strng{authorbibnamehash}{f6e0b3056f3341e87820b1e995213309}
+      \strng{authornamehash}{95c4cf18ede8f4e791cc502cb2bf480d}
+      \strng{authorfullhash}{f6e0b3056f3341e87820b1e995213309}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Analog Integrated Circuits and Signal Processing}
+      \field{month}{5}
+      \field{number}{1}
+      \field{title}{An energy-efficient switching scheme with low common-mode voltage variation and no-capacitor-splitting {DAC} for {SAR} {ADC}}
+      \field{volume}{104}
+      \field{year}{2020}
+      \field{pages}{93\bibrangedash 101}
+      \range{pages}{9}
+    \endentry
+    \entry{Hu22}{article}{}
+      \name{author}{4}{}{%
+        {{hash=ef8b241c4c62106fbe853a6a6f8f7bd7}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Yunfeng},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3340f614d3952c15553dd00bf3d5f98c}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Lexing},
+           giveni={L\bibinitperiod}}}%
+        {{hash=873019c79a0f3cddb4fc1ca5e24bf341}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=7870832767770db7eeba7a86427dc42b}{%
+           family={Yi},
+           familyi={Y\bibinitperiod},
+           given={Zichuan},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Frontiers Media {SA}}%
+      }
+      \strng{namehash}{1e4e81f2c3afdf39f0e88a35caa62a42}
+      \strng{fullhash}{ae45313124e09000f02a6e5c9e830b73}
+      \strng{bibnamehash}{ae45313124e09000f02a6e5c9e830b73}
+      \strng{authorbibnamehash}{ae45313124e09000f02a6e5c9e830b73}
+      \strng{authornamehash}{1e4e81f2c3afdf39f0e88a35caa62a42}
+      \strng{authorfullhash}{ae45313124e09000f02a6e5c9e830b73}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Physics}
+      \field{month}{12}
+      \field{title}{A 10 bit 1~{MS}/s {SAR} {ADC} with one {LSB} common-mode shift energy-efficient switching scheme for image sensor}
+      \field{volume}{10}
+      \field{year}{2022}
+    \endentry
+    \entry{Momeni20}{article}{}
+      \name{author}{3}{}{%
+        {{hash=72e334e53aa8a420f7af1576bce5d757}{%
+           family={Momeni},
+           familyi={M\bibinitperiod},
+           given={Mahdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=39a454aff0b13f78e619b88112e92ee2}{%
+           family={Sharifkhani},
+           familyi={S\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=753f991c4385b4a6d615a2b29cbb61ca}{%
+           family={Yazdani},
+           familyi={Y\bibinitperiod},
+           given={Seyed\bibnamedelima Behnam},
+           giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{cf8db67070cf52087af1c7c57809ce0f}
+      \strng{fullhash}{cf8db67070cf52087af1c7c57809ce0f}
+      \strng{bibnamehash}{cf8db67070cf52087af1c7c57809ce0f}
+      \strng{authorbibnamehash}{cf8db67070cf52087af1c7c57809ce0f}
+      \strng{authornamehash}{cf8db67070cf52087af1c7c57809ce0f}
+      \strng{authorfullhash}{cf8db67070cf52087af1c7c57809ce0f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Analog Integrated Circuits and Signal Processing}
+      \field{month}{11}
+      \field{number}{2}
+      \field{title}{A high energy-efficiency and low-area switching scheme for SAR ADCs}
+      \field{volume}{106}
+      \field{year}{2020}
+      \field{pages}{449\bibrangedash 457}
+      \range{pages}{9}
+    \endentry
+    \entry{Akbari19}{article}{}
+      \name{author}{4}{}{%
+        {{hash=76aa885984fa606e4e9a61ad9ddef1e0}{%
+           family={Akbari},
+           familyi={A\bibinitperiod},
+           given={Meysam},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e09717a1406bdcd4a7c6eddb9de79924}{%
+           family={Hashemipour},
+           familyi={H\bibinitperiod},
+           given={Omid},
+           giveni={O\bibinitperiod}}}%
+        {{hash=dc34c1dfe9a46fd6ee1b995947454004}{%
+           family={Nazari},
+           familyi={N\bibinitperiod},
+           given={Masoud},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ff2f415e46ec13071495c2acd9df8fc4}{%
+           family={Moradi},
+           familyi={M\bibinitperiod},
+           given={Farshad},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{e3973f9ae5ffb22636be60c364eb6b5e}
+      \strng{fullhash}{10d0282761e95fa693ea5d3f3c229ae2}
+      \strng{bibnamehash}{10d0282761e95fa693ea5d3f3c229ae2}
+      \strng{authorbibnamehash}{10d0282761e95fa693ea5d3f3c229ae2}
+      \strng{authornamehash}{e3973f9ae5ffb22636be60c364eb6b5e}
+      \strng{authorfullhash}{10d0282761e95fa693ea5d3f3c229ae2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Circuit Theory and Applications}
+      \field{month}{4}
+      \field{number}{7}
+      \field{title}{A charge sharing{–}based switching scheme for {SAR} {ADCs}}
+      \field{volume}{47}
+      \field{year}{2019}
+      \field{pages}{1188\bibrangedash 1198}
+      \range{pages}{11}
+    \endentry
+    \entry{Yousefi18}{article}{}
+      \name{author}{3}{}{%
+        {{hash=20da9c71473252929cd05c2f48d8b167}{%
+           family={Yousefi},
+           familyi={Y\bibinitperiod},
+           given={Tayebeh},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8bf5a236386cf0198286bea88342abd9}{%
+           family={Dabbaghian},
+           familyi={D\bibinitperiod},
+           given={Alireza},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f78c3f86fe91f64a6417df09a38c5c92}{%
+           family={Yavari},
+           familyi={Y\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers ({IEEE})}%
+      }
+      \strng{namehash}{68e4c55a2c5c370b93ecc86dd1632cd1}
+      \strng{fullhash}{68e4c55a2c5c370b93ecc86dd1632cd1}
+      \strng{bibnamehash}{68e4c55a2c5c370b93ecc86dd1632cd1}
+      \strng{authorbibnamehash}{68e4c55a2c5c370b93ecc86dd1632cd1}
+      \strng{authornamehash}{68e4c55a2c5c370b93ecc86dd1632cd1}
+      \strng{authorfullhash}{68e4c55a2c5c370b93ecc86dd1632cd1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Transactions on Circuits and Systems {II}: Express Briefs}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{An Energy-Efficient {DAC} Switching Method for {SAR} {ADCs}}
+      \field{volume}{65}
+      \field{year}{2018}
+      \field{pages}{41\bibrangedash 45}
+      \range{pages}{5}
+    \endentry
+    \entry{Ginsburg}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=676b51525f2f62715e61685c66a5a51d}{%
+           family={Ginsburg},
+           familyi={G\bibinitperiod},
+           given={B.P.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b3778fc339ace087aa43bca93cd765da}{%
+           family={Chandrakasan},
+           familyi={C\bibinitperiod},
+           given={A.P.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d027a98c2e7307a04ff058d9253a000b}
+      \strng{fullhash}{d027a98c2e7307a04ff058d9253a000b}
+      \strng{bibnamehash}{d027a98c2e7307a04ff058d9253a000b}
+      \strng{authorbibnamehash}{d027a98c2e7307a04ff058d9253a000b}
+      \strng{authornamehash}{d027a98c2e7307a04ff058d9253a000b}
+      \strng{authorfullhash}{d027a98c2e7307a04ff058d9253a000b}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2005 IEEE International Symposium on Circuits and Systems}
+      \field{title}{An energy-efficient charge recycling approach for a SAR converter with capacitive DAC}
+      \field{year}{2005}
+      \field{pages}{184\bibrangedash 187 Vol. 1}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1109/ISCAS.2005.1464555
+      \endverb
+      \keyw{Energy efficiency;Recycling;Capacitors;Logic arrays;Voltage;Switching converters;Shift registers;Switches;Differential equations;Topology}
+    \endentry
+    \entry{Xin21}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=983a92378cc7f5186c9e87a052306437}{%
+           family={Xin},
+           familyi={X\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=4055078884fbf1b1b013d82da8874c9c}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Shimei},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c420d372f1083eff4c1cde1518541e7f}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Yuanhao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0a528f5eb5359d4a9e0a96c77f71ff5b}{%
+           family={Tong},
+           familyi={T\bibinitperiod},
+           given={Xingyuan},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{6581a816b20141a5fddb8de00608f3a5}
+      \strng{fullhash}{5a159e54ed42c1f910887c3e0387bea4}
+      \strng{bibnamehash}{5a159e54ed42c1f910887c3e0387bea4}
+      \strng{authorbibnamehash}{5a159e54ed42c1f910887c3e0387bea4}
+      \strng{authornamehash}{6581a816b20141a5fddb8de00608f3a5}
+      \strng{authorfullhash}{5a159e54ed42c1f910887c3e0387bea4}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2021 IEEE International Conference on Integrated Circuits, Technologies and Applications (ICTA)}
+      \field{title}{A 1st-order noise shaping SAR ADC with dual-capacitor merge-and-split switching scheme for sensor chip}
+      \field{year}{2021}
+      \field{pages}{267\bibrangedash 268}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1109/ICTA53157.2021.9661932
+      \endverb
+    \endentry
+    \entry{Yuan12}{article}{}
+      \name{author}{2}{}{%
+        {{hash=548eaf1397ad6485b7f79282d8a68565}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=3edfa9279e391e6014a17bf664f1dd85}{%
+           family={Lam},
+           familyi={L\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institution of Engineering}%
+        {Technology ({IET})}%
+      }
+      \strng{namehash}{0f26ac1f87ecc864793acd745ad03fce}
+      \strng{fullhash}{0f26ac1f87ecc864793acd745ad03fce}
+      \strng{bibnamehash}{0f26ac1f87ecc864793acd745ad03fce}
+      \strng{authorbibnamehash}{0f26ac1f87ecc864793acd745ad03fce}
+      \strng{authornamehash}{0f26ac1f87ecc864793acd745ad03fce}
+      \strng{authorfullhash}{0f26ac1f87ecc864793acd745ad03fce}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Electronics Letters}
+      \field{number}{9}
+      \field{title}{Low-energy and area-efficient tri-level switching scheme for {SAR} {ADC}}
+      \field{volume}{48}
+      \field{year}{2012}
+      \field{pages}{482}
+      \range{pages}{1}
+    \endentry
+    \entry{Sanyal13}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4945b1432c9e775f78456282c53db873}{%
+           family={Sanyal},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=77c209a6fca2a442bb37b5834a591e4f}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institution of Engineering}%
+        {Technology ({IET})}%
+      }
+      \strng{namehash}{80f859f6d71df771532acbeb2b022f37}
+      \strng{fullhash}{80f859f6d71df771532acbeb2b022f37}
+      \strng{bibnamehash}{80f859f6d71df771532acbeb2b022f37}
+      \strng{authorbibnamehash}{80f859f6d71df771532acbeb2b022f37}
+      \strng{authornamehash}{80f859f6d71df771532acbeb2b022f37}
+      \strng{authorfullhash}{80f859f6d71df771532acbeb2b022f37}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Electronics Letters}
+      \field{number}{4}
+      \field{title}{{SAR} {ADC} architecture with 98\% reduction in switching energy over conventional scheme}
+      \field{volume}{49}
+      \field{year}{2013}
+      \field{pages}{248\bibrangedash 250}
+      \range{pages}{3}
+    \endentry
+    \entry{Zhu13}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4faf995d1f9edba83ce7727b47a83d49}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Zhangming},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=12c29a6c8f31ed3fdbac484e161786ef}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a1c5dd8fb826efa4e782ddf4f01f2b68}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Xiaoli},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institution of Engineering}%
+        {Technology ({IET})}%
+      }
+      \strng{namehash}{e23e442ccb89214b88278b2a93f2e12e}
+      \strng{fullhash}{e23e442ccb89214b88278b2a93f2e12e}
+      \strng{bibnamehash}{e23e442ccb89214b88278b2a93f2e12e}
+      \strng{authorbibnamehash}{e23e442ccb89214b88278b2a93f2e12e}
+      \strng{authornamehash}{e23e442ccb89214b88278b2a93f2e12e}
+      \strng{authorfullhash}{e23e442ccb89214b88278b2a93f2e12e}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Electronics Letters}
+      \field{month}{2}
+      \field{number}{5}
+      \field{title}{Vcm-based monotonic capacitor switching scheme for {SAR} {ADC}}
+      \field{volume}{49}
+      \field{year}{2013}
+      \field{pages}{327\bibrangedash 329}
+      \range{pages}{3}
+    \endentry
+    \entry{Chen14}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=2b01d303567b99056235e81bd74fd50e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Long},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1e7dd04d920aaf8ab344cc0d002c0dc3}{%
+           family={Sanyal},
+           familyi={S\bibinitperiod},
+           given={Arindam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4d364bcd997afac4c26edfb781a5b912}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Ji},
+           giveni={J\bibinitperiod}}}%
+        {{hash=00484a2d5c6d6f07871908e2804a5416}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Nan},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{0fe7879d3d988492e2d0f89a7cb21089}
+      \strng{fullhash}{d38c413bf26473a454c583a2a21f7d44}
+      \strng{bibnamehash}{d38c413bf26473a454c583a2a21f7d44}
+      \strng{authorbibnamehash}{d38c413bf26473a454c583a2a21f7d44}
+      \strng{authornamehash}{0fe7879d3d988492e2d0f89a7cb21089}
+      \strng{authorfullhash}{d38c413bf26473a454c583a2a21f7d44}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{40th European Solid State Circuits Conference (ESSCIRC)}
+      \field{month}{9}
+      \field{title}{A 24-uW 11-bit 1-MS/s SAR ADC with a bidirectional single-side switching technique}
+      \field{year}{2014}
+    \endentry
     \entry{Zhu10}{article}{}
       \name{author}{7}{}{%
         {{hash=4a21facded71b2c81786f156cd7c6591}{%
@@ -79,12 +563,6 @@
       \field{year}{2010}
       \field{pages}{1111\bibrangedash 1121}
       \range{pages}{11}
-      \verb{urlraw}
-      \verb https://doi.org/10.1109/jssc.2010.2048498
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1109/jssc.2010.2048498
-      \endverb
     \endentry
     \entry{Rahimi14}{article}{}
       \name{author}{2}{}{%
@@ -121,509 +599,6 @@
       \field{year}{2014}
       \field{pages}{499\bibrangedash 501}
       \range{pages}{3}
-      \verb{urlraw}
-      \verb https://doi.org/10.1049/el.2013.3451
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1049/el.2013.3451
-      \endverb
-    \endentry
-    \entry{Xin21}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=983a92378cc7f5186c9e87a052306437}{%
-           family={Xin},
-           familyi={X\bibinitperiod},
-           given={Xin},
-           giveni={X\bibinitperiod}}}%
-        {{hash=4055078884fbf1b1b013d82da8874c9c}{%
-           family={Zhao},
-           familyi={Z\bibinitperiod},
-           given={Shimei},
-           giveni={S\bibinitperiod}}}%
-        {{hash=c420d372f1083eff4c1cde1518541e7f}{%
-           family={Hu},
-           familyi={H\bibinitperiod},
-           given={Yuanhao},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=0a528f5eb5359d4a9e0a96c77f71ff5b}{%
-           family={Tong},
-           familyi={T\bibinitperiod},
-           given={Xingyuan},
-           giveni={X\bibinitperiod}}}%
-      }
-      \strng{namehash}{6581a816b20141a5fddb8de00608f3a5}
-      \strng{fullhash}{5a159e54ed42c1f910887c3e0387bea4}
-      \strng{bibnamehash}{5a159e54ed42c1f910887c3e0387bea4}
-      \strng{authorbibnamehash}{5a159e54ed42c1f910887c3e0387bea4}
-      \strng{authornamehash}{6581a816b20141a5fddb8de00608f3a5}
-      \strng{authorfullhash}{5a159e54ed42c1f910887c3e0387bea4}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2021 IEEE International Conference on Integrated Circuits, Technologies and Applications (ICTA)}
-      \field{title}{A 1st-order noise shaping SAR ADC with dual-capacitor merge-and-split switching scheme for sensor chip}
-      \field{year}{2021}
-      \field{pages}{267\bibrangedash 268}
-      \range{pages}{2}
-      \verb{doi}
-      \verb 10.1109/ICTA53157.2021.9661932
-      \endverb
-    \endentry
-    \entry{Wu17}{article}{}
-      \name{author}{3}{}{%
-        {{hash=a39566b42e8068ac7898af3edc0d015d}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Aidong},
-           giveni={A\bibinitperiod}}}%
-        {{hash=c66823031a6ec935277e1404f6e8b4e8}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Jianhui},
-           giveni={J\bibinitperiod}}}%
-        {{hash=733256c2452217b6cec8912fa1abf4eb}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Jun},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Springer Science}%
-        {Business Media {LLC}}%
-      }
-      \strng{namehash}{4c8b1c26324fbbd8c8b8e9c0ab4471a3}
-      \strng{fullhash}{4c8b1c26324fbbd8c8b8e9c0ab4471a3}
-      \strng{bibnamehash}{4c8b1c26324fbbd8c8b8e9c0ab4471a3}
-      \strng{authorbibnamehash}{4c8b1c26324fbbd8c8b8e9c0ab4471a3}
-      \strng{authornamehash}{4c8b1c26324fbbd8c8b8e9c0ab4471a3}
-      \strng{authorfullhash}{4c8b1c26324fbbd8c8b8e9c0ab4471a3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Analog Integrated Circuits and Signal Processing}
-      \field{month}{11}
-      \field{number}{2}
-      \field{title}{Energy-efﬁcient switching scheme for ultra-low voltage SAR ADC}
-      \field{volume}{90}
-      \field{year}{2017}
-      \field{pages}{507\bibrangedash 511}
-      \range{pages}{5}
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/s10470-016-0892-0
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/s10470-016-0892-0
-      \endverb
-    \endentry
-    \entry{Li20}{article}{}
-      \name{author}{4}{}{%
-        {{hash=6319b1782c97a1ea83590bf2347598b0}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Junhui},
-           giveni={J\bibinitperiod}}}%
-        {{hash=86d8cd66cb62928ca1ec636d8cd2e11c}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Xin},
-           giveni={X\bibinitperiod}}}%
-        {{hash=4a3f33ee766df199ab94dd8945d771d3}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Linlin},
-           giveni={L\bibinitperiod}}}%
-        {{hash=c66823031a6ec935277e1404f6e8b4e8}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Jianhui},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Springer Science}%
-        {Business Media {LLC}}%
-      }
-      \strng{namehash}{95c4cf18ede8f4e791cc502cb2bf480d}
-      \strng{fullhash}{f6e0b3056f3341e87820b1e995213309}
-      \strng{bibnamehash}{f6e0b3056f3341e87820b1e995213309}
-      \strng{authorbibnamehash}{f6e0b3056f3341e87820b1e995213309}
-      \strng{authornamehash}{95c4cf18ede8f4e791cc502cb2bf480d}
-      \strng{authorfullhash}{f6e0b3056f3341e87820b1e995213309}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Analog Integrated Circuits and Signal Processing}
-      \field{month}{5}
-      \field{number}{1}
-      \field{title}{An energy-efficient switching scheme with low common-mode voltage variation and no-capacitor-splitting {DAC} for {SAR} {ADC}}
-      \field{volume}{104}
-      \field{year}{2020}
-      \field{pages}{93\bibrangedash 101}
-      \range{pages}{9}
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/s10470-020-01661-6
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/s10470-020-01661-6
-      \endverb
-    \endentry
-    \entry{Hu22}{article}{}
-      \name{author}{4}{}{%
-        {{hash=ef8b241c4c62106fbe853a6a6f8f7bd7}{%
-           family={Hu},
-           familyi={H\bibinitperiod},
-           given={Yunfeng},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=3340f614d3952c15553dd00bf3d5f98c}{%
-           family={Hu},
-           familyi={H\bibinitperiod},
-           given={Lexing},
-           giveni={L\bibinitperiod}}}%
-        {{hash=873019c79a0f3cddb4fc1ca5e24bf341}{%
-           family={Tang},
-           familyi={T\bibinitperiod},
-           given={Bin},
-           giveni={B\bibinitperiod}}}%
-        {{hash=7870832767770db7eeba7a86427dc42b}{%
-           family={Yi},
-           familyi={Y\bibinitperiod},
-           given={Zichuan},
-           giveni={Z\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Frontiers Media {SA}}%
-      }
-      \strng{namehash}{1e4e81f2c3afdf39f0e88a35caa62a42}
-      \strng{fullhash}{ae45313124e09000f02a6e5c9e830b73}
-      \strng{bibnamehash}{ae45313124e09000f02a6e5c9e830b73}
-      \strng{authorbibnamehash}{ae45313124e09000f02a6e5c9e830b73}
-      \strng{authornamehash}{1e4e81f2c3afdf39f0e88a35caa62a42}
-      \strng{authorfullhash}{ae45313124e09000f02a6e5c9e830b73}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Frontiers in Physics}
-      \field{month}{12}
-      \field{title}{A 10 bit 1~{MS}/s {SAR} {ADC} with one {LSB} common-mode shift energy-efficient switching scheme for image sensor}
-      \field{volume}{10}
-      \field{year}{2022}
-      \verb{urlraw}
-      \verb https://doi.org/10.3389/fphy.2022.1102674
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.3389/fphy.2022.1102674
-      \endverb
-    \endentry
-    \entry{Ginsburg}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{hash=676b51525f2f62715e61685c66a5a51d}{%
-           family={Ginsburg},
-           familyi={G\bibinitperiod},
-           given={B.P.},
-           giveni={B\bibinitperiod}}}%
-        {{hash=b3778fc339ace087aa43bca93cd765da}{%
-           family={Chandrakasan},
-           familyi={C\bibinitperiod},
-           given={A.P.},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{d027a98c2e7307a04ff058d9253a000b}
-      \strng{fullhash}{d027a98c2e7307a04ff058d9253a000b}
-      \strng{bibnamehash}{d027a98c2e7307a04ff058d9253a000b}
-      \strng{authorbibnamehash}{d027a98c2e7307a04ff058d9253a000b}
-      \strng{authornamehash}{d027a98c2e7307a04ff058d9253a000b}
-      \strng{authorfullhash}{d027a98c2e7307a04ff058d9253a000b}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2005 IEEE International Symposium on Circuits and Systems}
-      \field{title}{An energy-efficient charge recycling approach for a SAR converter with capacitive DAC}
-      \field{year}{2005}
-      \field{pages}{184\bibrangedash 187 Vol. 1}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1109/ISCAS.2005.1464555
-      \endverb
-      \keyw{Energy efficiency;Recycling;Capacitors;Logic arrays;Voltage;Switching converters;Shift registers;Switches;Differential equations;Topology}
-    \endentry
-    \entry{Yuan12}{article}{}
-      \name{author}{2}{}{%
-        {{hash=548eaf1397ad6485b7f79282d8a68565}{%
-           family={Yuan},
-           familyi={Y\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod}}}%
-        {{hash=3edfa9279e391e6014a17bf664f1dd85}{%
-           family={Lam},
-           familyi={L\bibinitperiod},
-           given={Y.},
-           giveni={Y\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Institution of Engineering}%
-        {Technology ({IET})}%
-      }
-      \strng{namehash}{0f26ac1f87ecc864793acd745ad03fce}
-      \strng{fullhash}{0f26ac1f87ecc864793acd745ad03fce}
-      \strng{bibnamehash}{0f26ac1f87ecc864793acd745ad03fce}
-      \strng{authorbibnamehash}{0f26ac1f87ecc864793acd745ad03fce}
-      \strng{authornamehash}{0f26ac1f87ecc864793acd745ad03fce}
-      \strng{authorfullhash}{0f26ac1f87ecc864793acd745ad03fce}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Electronics Letters}
-      \field{number}{9}
-      \field{title}{Low-energy and area-efficient tri-level switching scheme for {SAR} {ADC}}
-      \field{volume}{48}
-      \field{year}{2012}
-      \field{pages}{482}
-      \range{pages}{1}
-      \verb{urlraw}
-      \verb https://doi.org/10.1049/el.2011.4001
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1049/el.2011.4001
-      \endverb
-    \endentry
-    \entry{Sanyal13}{article}{}
-      \name{author}{2}{}{%
-        {{hash=4945b1432c9e775f78456282c53db873}{%
-           family={Sanyal},
-           familyi={S\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-        {{hash=77c209a6fca2a442bb37b5834a591e4f}{%
-           family={Sun},
-           familyi={S\bibinitperiod},
-           given={N.},
-           giveni={N\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Institution of Engineering}%
-        {Technology ({IET})}%
-      }
-      \strng{namehash}{80f859f6d71df771532acbeb2b022f37}
-      \strng{fullhash}{80f859f6d71df771532acbeb2b022f37}
-      \strng{bibnamehash}{80f859f6d71df771532acbeb2b022f37}
-      \strng{authorbibnamehash}{80f859f6d71df771532acbeb2b022f37}
-      \strng{authornamehash}{80f859f6d71df771532acbeb2b022f37}
-      \strng{authorfullhash}{80f859f6d71df771532acbeb2b022f37}
-      \field{extraname}{1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Electronics Letters}
-      \field{number}{4}
-      \field{title}{{SAR} {ADC} architecture with 98\% reduction in switching energy over conventional scheme}
-      \field{volume}{49}
-      \field{year}{2013}
-      \field{pages}{248\bibrangedash 250}
-      \range{pages}{3}
-      \verb{urlraw}
-      \verb https://doi.org/10.1049/el.2012.3900
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1049/el.2012.3900
-      \endverb
-    \endentry
-    \entry{Zhu13}{article}{}
-      \name{author}{3}{}{%
-        {{hash=4faf995d1f9edba83ce7727b47a83d49}{%
-           family={Zhu},
-           familyi={Z\bibinitperiod},
-           given={Zhangming},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=12c29a6c8f31ed3fdbac484e161786ef}{%
-           family={Xiao},
-           familyi={X\bibinitperiod},
-           given={Yu},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=a1c5dd8fb826efa4e782ddf4f01f2b68}{%
-           family={Song},
-           familyi={S\bibinitperiod},
-           given={Xiaoli},
-           giveni={X\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Institution of Engineering}%
-        {Technology ({IET})}%
-      }
-      \strng{namehash}{e23e442ccb89214b88278b2a93f2e12e}
-      \strng{fullhash}{e23e442ccb89214b88278b2a93f2e12e}
-      \strng{bibnamehash}{e23e442ccb89214b88278b2a93f2e12e}
-      \strng{authorbibnamehash}{e23e442ccb89214b88278b2a93f2e12e}
-      \strng{authornamehash}{e23e442ccb89214b88278b2a93f2e12e}
-      \strng{authorfullhash}{e23e442ccb89214b88278b2a93f2e12e}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Electronics Letters}
-      \field{month}{2}
-      \field{number}{5}
-      \field{title}{Vcm-based monotonic capacitor switching scheme for {SAR} {ADC}}
-      \field{volume}{49}
-      \field{year}{2013}
-      \field{pages}{327\bibrangedash 329}
-      \range{pages}{3}
-      \verb{urlraw}
-      \verb https://doi.org/10.1049/el.2012.3332
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1049/el.2012.3332
-      \endverb
-    \endentry
-    \entry{Akbari19}{article}{}
-      \name{author}{4}{}{%
-        {{hash=76aa885984fa606e4e9a61ad9ddef1e0}{%
-           family={Akbari},
-           familyi={A\bibinitperiod},
-           given={Meysam},
-           giveni={M\bibinitperiod}}}%
-        {{hash=e09717a1406bdcd4a7c6eddb9de79924}{%
-           family={Hashemipour},
-           familyi={H\bibinitperiod},
-           given={Omid},
-           giveni={O\bibinitperiod}}}%
-        {{hash=dc34c1dfe9a46fd6ee1b995947454004}{%
-           family={Nazari},
-           familyi={N\bibinitperiod},
-           given={Masoud},
-           giveni={M\bibinitperiod}}}%
-        {{hash=ff2f415e46ec13071495c2acd9df8fc4}{%
-           family={Moradi},
-           familyi={M\bibinitperiod},
-           given={Farshad},
-           giveni={F\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Wiley}%
-      }
-      \strng{namehash}{e3973f9ae5ffb22636be60c364eb6b5e}
-      \strng{fullhash}{10d0282761e95fa693ea5d3f3c229ae2}
-      \strng{bibnamehash}{10d0282761e95fa693ea5d3f3c229ae2}
-      \strng{authorbibnamehash}{10d0282761e95fa693ea5d3f3c229ae2}
-      \strng{authornamehash}{e3973f9ae5ffb22636be60c364eb6b5e}
-      \strng{authorfullhash}{10d0282761e95fa693ea5d3f3c229ae2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International Journal of Circuit Theory and Applications}
-      \field{month}{4}
-      \field{number}{7}
-      \field{title}{A charge sharing{–}based switching scheme for {SAR} {ADCs}}
-      \field{volume}{47}
-      \field{year}{2019}
-      \field{pages}{1188\bibrangedash 1198}
-      \range{pages}{11}
-      \verb{urlraw}
-      \verb https://doi.org/10.1002/cta.2635
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1002/cta.2635
-      \endverb
-    \endentry
-    \entry{Yousefi18}{article}{}
-      \name{author}{3}{}{%
-        {{hash=20da9c71473252929cd05c2f48d8b167}{%
-           family={Yousefi},
-           familyi={Y\bibinitperiod},
-           given={Tayebeh},
-           giveni={T\bibinitperiod}}}%
-        {{hash=8bf5a236386cf0198286bea88342abd9}{%
-           family={Dabbaghian},
-           familyi={D\bibinitperiod},
-           given={Alireza},
-           giveni={A\bibinitperiod}}}%
-        {{hash=f78c3f86fe91f64a6417df09a38c5c92}{%
-           family={Yavari},
-           familyi={Y\bibinitperiod},
-           given={Mohammad},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Institute of Electrical}%
-        {Electronics Engineers ({IEEE})}%
-      }
-      \strng{namehash}{68e4c55a2c5c370b93ecc86dd1632cd1}
-      \strng{fullhash}{68e4c55a2c5c370b93ecc86dd1632cd1}
-      \strng{bibnamehash}{68e4c55a2c5c370b93ecc86dd1632cd1}
-      \strng{authorbibnamehash}{68e4c55a2c5c370b93ecc86dd1632cd1}
-      \strng{authornamehash}{68e4c55a2c5c370b93ecc86dd1632cd1}
-      \strng{authorfullhash}{68e4c55a2c5c370b93ecc86dd1632cd1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{{IEEE} Transactions on Circuits and Systems {II}: Express Briefs}
-      \field{month}{1}
-      \field{number}{1}
-      \field{title}{An Energy-Efficient {DAC} Switching Method for {SAR} {ADCs}}
-      \field{volume}{65}
-      \field{year}{2018}
-      \field{pages}{41\bibrangedash 45}
-      \range{pages}{5}
-      \verb{urlraw}
-      \verb https://doi.org/10.1109/tcsii.2017.2676048
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1109/tcsii.2017.2676048
-      \endverb
-    \endentry
-    \entry{Chen14}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=2b01d303567b99056235e81bd74fd50e}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Long},
-           giveni={L\bibinitperiod}}}%
-        {{hash=1e7dd04d920aaf8ab344cc0d002c0dc3}{%
-           family={Sanyal},
-           familyi={S\bibinitperiod},
-           given={Arindam},
-           giveni={A\bibinitperiod}}}%
-        {{hash=4d364bcd997afac4c26edfb781a5b912}{%
-           family={Ma},
-           familyi={M\bibinitperiod},
-           given={Ji},
-           giveni={J\bibinitperiod}}}%
-        {{hash=00484a2d5c6d6f07871908e2804a5416}{%
-           family={Sun},
-           familyi={S\bibinitperiod},
-           given={Nan},
-           giveni={N\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{0fe7879d3d988492e2d0f89a7cb21089}
-      \strng{fullhash}{d38c413bf26473a454c583a2a21f7d44}
-      \strng{bibnamehash}{d38c413bf26473a454c583a2a21f7d44}
-      \strng{authorbibnamehash}{d38c413bf26473a454c583a2a21f7d44}
-      \strng{authornamehash}{0fe7879d3d988492e2d0f89a7cb21089}
-      \strng{authorfullhash}{d38c413bf26473a454c583a2a21f7d44}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{40th European Solid State Circuits Conference (ESSCIRC)}
-      \field{month}{9}
-      \field{title}{A 24-uW 11-bit 1-MS/s SAR ADC with a bidirectional single-side switching technique}
-      \field{year}{2014}
-      \verb{urlraw}
-      \verb https://doi.org/10.1109/esscirc.2014.6942061
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1109/esscirc.2014.6942061
-      \endverb
     \endentry
     \entry{Sanyal13b}{inproceedings}{}
       \name{author}{2}{}{%
@@ -656,12 +631,6 @@
       \field{month}{8}
       \field{title}{A very high energy-efficiency switching technique for {SAR} {ADCs}}
       \field{year}{2013}
-      \verb{urlraw}
-      \verb https://doi.org/10.1109/mwscas.2013.6674627
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1109/mwscas.2013.6674627
-      \endverb
     \endentry
   \enddatalist
 \endrefsection
