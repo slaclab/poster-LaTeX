@@ -1,4 +1,4 @@
-# Stanford LaTeX Poster Template
+# SLAC LaTeX Poster Template
 
 ![](demos/SLAC_Poster_Template_Red.png)
 
@@ -28,6 +28,6 @@ To change the color, go to `beamerthemestanford.sty` and change the `headline` c
 
 ## Contributing
 
-Contributions are more than welcome! If you have a way to improve this poster, please pay it forward by opening a pull request and I'll add your improvement(s)
+Contributions are more than welcome! If you have a way to improve this poster, please pay it forward by opening a pull request and I'll add your improvement(s).
 
-Thank you in advance :)
+You can also contribute to the original repository https://github.com/RylanSchaeffer/Stanford-LaTeX-Poster-Template.
