@@ -1,6 +1,6 @@
 # Stanford LaTeX Poster Template
 
-![](poster_pic.png)
+![](demos/SLAC_Poster_Template_Red.png)
 
 ## 4 Available Colors
 
