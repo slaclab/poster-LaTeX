@@ -1,0 +1,106 @@
+\begin{circuitikz}[american, scale=1, transform shape]
+    % \tikzstyle{block} = [draw, rectangle, minimum height=1cm, minimum width=2cm]
+    % \tikzstyle{every node}=[font=\large]
+    \tikzstyle{every node}=[font=\footnotesize]
+
+    \draw ($ (-9.5,0.5) + (0,0) $) to[nos] ($ (-7.5,0.5) + (0,0) $);
+    \draw (-9.5,0.75) node[] {$v_{i,top}$};
+    \draw ($ (-9.5,-0.5) + (0,0) $) to[nos] ($ (-7.5,-0.5) + (0,0) $);
+    \draw (-9.5,-0.75) node[] {$v_{i,bot}$};
+
+    
+\draw (1.5,-0.0) node[op amp,scale=1.02,yscale=-1] (opamp1) {};
+\draw (opamp1.-) to[short] (-1.0,-0.5);
+\draw (opamp1.+) to[short] (-1.0,0.5);
+
+\draw (-0.5,0.5) to[C,l_=$C$] (-0.5,2.5);
+\draw (-2.5,0.5) to[C,l_=$C$] (-2.5,2.5);
+\draw (-4.5,0.5) to[C,l_=$2C$] (-4.5,2.5);
+\draw (-7.5,0.5) to[C,l_=$2^{N-3}C$] (-7.5,2.5);
+\draw (-0.5,2.8) node[] {$V_{0,top}$};
+\draw (-2.5,2.8) node[] {$V_{1,top}$};
+\draw (-4.5,2.8) node[] {$V_{2,top}$};
+\draw (-7.5,2.8) node[] {$V_{N-2,top}$};
+\draw (-7.5,0.5) to[short] (-0.5,0.5);
+\node at (-7.5,2.5) [circle, fill, inner sep=1.5pt] {};
+\node at (-4.5,2.5) [circle, fill, inner sep=1.5pt] {};
+\node at (-2.5,2.5) [circle, fill, inner sep=1.5pt] {};
+\node at (-0.5,2.5) [circle, fill, inner sep=1.5pt] {};
+\draw (-5.4,1.5) node[] {$\cdots$};
+\draw (-5.5,0.25) node[] {$v_{top}$};
+
+\draw (-0.5,-0.5) to[C,l=$C$] (-0.5,-2.5);
+\draw (-2.5,-0.5) to[C,l=$C$] (-2.5,-2.5);
+\draw (-4.5,-0.5) to[C,l=$2C$] (-4.5,-2.5);
+\draw (-7.5,-0.5) to[C,l=$2^{N-3}C$] (-7.5,-2.5);
+\draw (-0.5,-2.8) node[] {$V_{0,bot}$};
+\draw (-2.5,-2.8) node[] {$V_{1,bot}$};
+\draw (-4.5,-2.8) node[] {$V_{2,bot}$};
+\draw (-7.5,-2.8) node[] {$V_{N-2,bot}$};
+\draw (-7.5,-0.5) to[short] (-0.5,-0.5);
+\node at (-0.5,-2.5) [circle, fill, inner sep=1.5pt] {};
+\node at (-2.5,-2.5) [circle, fill, inner sep=1.5pt] {};
+\node at (-4.5,-2.5) [circle, fill, inner sep=1.5pt] {};
+\node at (-7.5,-2.5) [circle, fill, inner sep=1.5pt] {};
+\draw (-5.4,-1.5) node[] {$\cdots$};
+\draw (-6.0,-0.25) node[] {$v_{bot}$};
+
+\end{circuitikz}
+
+
+
+% \begin{circuitikz}[ american, scale=0.6, transform shape]
+% \tikzstyle{block} = [draw, rectangle, minimum height=1cm, minimum width=2cm]
+% \draw (1.5,-9.0) node[op amp,scale=1.02,yscale=-1] (opamp1) {};
+% \draw (opamp1.+) to[short] (0.0,-8.5);
+% \draw (opamp1.-) to[short] (0.0,-9.5);
+% \draw (0.0,-9.5) to[C] (0.0,-11.0);
+% \draw (-1.0,-9.5) to[C] (-1.0,-11.0);
+% \draw (-2.0,-9.5) to[C] (-2.0,-11.0);
+% \draw (0.0,-8.5) to[C] (0.0,-7.0);
+% \draw (-1.0,-8.5) to[C] (-1.0,-7.0);
+% \draw (-2.0,-8.5) to[C] (-2.0,-7.0);
+% \draw (0.0,-8.5) to[short] (-2.0,-8.5);
+% \draw (0.0,-9.5) to[short] (-2.0,-9.5);
+% \draw (-2.0,-6.6) node[] {$V_{0,\text{top}}$};
+% \draw (-1.0,-6.6) node[] {$V_{1,\text{top}}$};
+% \draw (0.0,-6.6) node[] {$V_{2,\text{top}}$};
+% \draw (-2.0,-11.4) node[] {$V_{0,\text{bot}}$};
+% \draw (-1.0,-11.4) node[] {$V_{1,\text{bot}}$};
+% \draw (0.0,-11.4) node[] {$V_{2,\text{bot}}$};
+% 
+% \node at (-2.0,-7.0) [circle, fill, inner sep=1.5pt] {};
+% \node at (-1.0,-7.0) [circle, fill, inner sep=1.5pt] {};
+% \node at (-0.0,-7.0) [circle, fill, inner sep=1.5pt] {};
+% 
+% \node at (-2.0,-11.0) [circle, fill, inner sep=1.5pt] {};
+% \node at (-1.0,-11.0) [circle, fill, inner sep=1.5pt] {};
+% \node at (-0.0,-11.0) [circle, fill, inner sep=1.5pt] {};
+% 
+% \draw (-1.8,-8.8) node[] {$v_{\text{top}}$};
+% \draw (-1.8,-9.3) node[] {$v_{\text{bot}}$};
+% \begin{scope}[xshift=-7cm]
+%     \draw (7.3,-9.85) node[] {$C$};
+%     \draw (6.3,-9.85) node[] {$C$};
+%     \draw (5.3,-9.85) node[] {$2C$};
+%     \draw (7.3,-8.25) node[] {$C$};
+%     \draw (6.3,-8.25) node[] {$C$};
+%     \draw (5.3,-8.25) node[] {$2C$};
+% \end{scope}
+% \begin{scope}[yshift=0.85cm, xshift=-7cm]
+%     \draw (7.5,-8.15) node[] {\small$C_{2,\text{top}}$};
+%     \draw (6.5,-8.15) node[] {\small$C_{1,\text{top}}$};
+%     \draw (5.5,-8.15) node[] {\small$C_{0,\text{top}}$};
+% \end{scope}
+% \begin{scope}[yshift=-2.6cm, xshift=-7cm]
+%     \draw (7.5,-8.15) node[] {\small$C_{2,\text{bot}}$};
+%     \draw (6.5,-8.15) node[] {\small$C_{1,\text{bot}}$};
+%     \draw (5.5,-8.15) node[] {\small$C_{0,\text{bot}}$};
+% \end{scope}
+% \end{circuitikz}
+
+
+% \begin{circuitikz}[ american, scale=0.6, transform shape]
+% \tikzstyle{block} = [draw, rectangle, minimum height=1cm, minimum width=2cm]
+% \draw (1.5,-9.0) node[op amp,scale=1.02,yscale=-1] (opamp1) {};
+

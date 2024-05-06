@@ -1,0 +1,69 @@
+
+% \begin{circuitikz}[>=latex', american, scale=0.6, transform shape]
+\begin{circuitikz}[ american, scale=0.6, transform shape]
+\tikzstyle{block} = [draw, rectangle, minimum height=1cm, minimum width=2cm]
+\draw (1.5,-9.0) node[op amp,scale=1.02,yscale=-1] (opamp1) {};
+\draw (opamp1.+) to[short] (0.0,-8.5);
+\draw (opamp1.-) to[short] (0.0,-9.5);
+\draw (0.0,-9.5) to[C] (0.0,-11.0);
+\draw (-1.0,-9.5) to[C] (-1.0,-11.0);
+\draw (-2.0,-9.5) to[C] (-2.0,-11.0);
+\draw (0.0,-8.5) to[C] (0.0,-7.0);
+\draw (-1.0,-8.5) to[C] (-1.0,-7.0);
+\draw (-2.0,-8.5) to[C] (-2.0,-7.0);
+\draw (0.0,-8.5) to[short] (-2.0,-8.5);
+\draw (0.0,-9.5) to[short] (-2.0,-9.5);
+\draw (-2.0,-6.8) node[] {$1$};
+\draw (-1.0,-6.8) node[] {$0$};
+\draw (0.0,-6.8) node[] {$0$};
+\draw (-1.0,-11.3) node[] {$v_{in}$};
+\draw (0.0,-11.0) to[short] (-2.0,-11.0);
+
+\draw (-1.8,-8.8) node[] {$v_{in}$};
+\draw (-1.8,-9.3) node[] {$1/2$};
+
+\draw (8.5,-9.0) node[op amp,scale=1.02,yscale=-1] (opamp2) {};
+\draw (opamp2.+) to[short] (7.0,-8.5);
+\draw (opamp2.-) to[short] (7.0,-9.5);
+\draw (7.0,-9.5) to[C] (7.0,-11.0);
+\draw (6.0,-9.5) to[C] (6.0,-11.0);
+\draw (5.0,-9.5) to[C] (5.0,-11.0);
+\draw (7.0,-8.5) to[C] (7.0,-7.0);
+\draw (6.0,-8.5) to[C] (6.0,-7.0);
+\draw (5.0,-8.5) to[C] (5.0,-7.0);
+\draw (7.0,-8.5) to[short] (5.0,-8.5);
+\draw (7.0,-9.5) to[short] (5.0,-9.5);
+\draw (5.0,-6.8) node[] {$1$};
+\draw (6.0,-6.8) node[] {$0$};
+\draw (7.0,-6.8) node[] {$0$};
+\draw (5.0,-11.3) node[] {$1$};
+\draw (6.0,-11.3) node[] {$0$};
+\draw (7.0,-11.3) node[] {$0$};
+
+\draw (7.3,-9.85) node[] {$C$};
+\draw (6.3,-9.85) node[] {$C$};
+\draw (5.3,-9.85) node[] {$2C$};
+\draw (7.3,-8.25) node[] {$C$};
+\draw (6.3,-8.25) node[] {$C$};
+\draw (5.3,-8.25) node[] {$2C$};
+
+ \begin{scope}[xshift=-7cm]
+    \draw (7.3,-9.85) node[] {$C$};
+    \draw (6.3,-9.85) node[] {$C$};
+    \draw (5.3,-9.85) node[] {$2C$};
+    \draw (7.3,-8.25) node[] {$C$};
+    \draw (6.3,-8.25) node[] {$C$};
+    \draw (5.3,-8.25) node[] {$2C$};
+\end{scope}
+
+\draw (5.2,-8.8) node[] {$v_{in}$};
+\draw (5.5,-9.3) node[] {$1-v_{in}$};
+
+\draw [->] (3.0,-9.0) -- (4.5,-9.0);
+% \draw (3.7,-8.7) node[] {$E=C V^2$};
+\draw (3.7,-8.7) node[] {$E=C \cdot 1^2$};
+
+\end{circuitikz}
+
+
+

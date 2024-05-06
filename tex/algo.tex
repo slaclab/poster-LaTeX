@@ -1,0 +1,69 @@
+
+\begin{circuitikz}[american, /tikz/circuitikz/bipoles/length=0.5cm, scale=1.5, transform shape, /tikz/circuitikz/bipoles/thickness=1]
+    \tikzstyle{every node}=[font=\fontsize{6}{6}\selectfont]
+% Algorithm
+\begin{scope}[xshift=0.2cm]
+	% \draw [->] (18,4) -- node[midway,left] {$i == N-2$} (18,3.5);
+	\draw [->] (19,4.65) -- node[midway,left] {} (19,3.27);
+	\draw [->] (19,1.87) -- node[midway,left] {} (19,0.25);
+    \draw[->, bend right=90, distance=0.75cm] (19,-6.8) to node[midway, left, yshift=-0.2cm, xshift=0.6cm] { if $i < N-2$\ :} (20,-6.8);
+    \draw (19.4,-7.9) node[] { $i \leftarrow i + 1$};
+	\draw [-] (21,-6.8) |- node[] {} (23.25,-7.25); % COMPARE to INITIALIZE
+    \draw [-] (23.25,-7.25) -- node[xshift=-0.75cm, yshift=3cm] { if $i==N-2$} (23.25,5.0); % COMPARE to INITIALIZE
+	\draw [->] (23.25,5.0) |- node[midway,left] {} (22.05,5.5); % COMPARE to INITIALIZE
+
+% INITIALIZE
+\begin{scope}[xshift=18cm, yshift=6cm]
+    \path [fill=gray!10, draw=black, line width=0.5pt] (0,0.25) rectangle (4,-1.35);
+    \draw (0, 0) node[right] { \textbf{INITIALIZATION}};
+    \draw (0, -0.3) node[right] { Sampling switches $\leftarrow$ open};
+    \draw (0, -0.6) node[right] { $V_{a} \leftarrow [1,0,...,0], V_{b} \leftarrow [1,0,...,0]$};
+    \draw (0, -0.9) node[right] { $V_{top} \leftarrow \text{flag}_\text{top} \ ? \ V_a : V_b$};
+    \draw (0, -1.2) node[right] { $V_{bot} \leftarrow \text{flag}_\text{top} \ ? \ V_b : V_a$};
+\end{scope}
+% SAMPLE
+\begin{scope}[xshift=18cm, yshift=3cm]
+    \path [fill=gray!10, draw=black, line width=0.5pt] (0,0.25) rectangle (3.0,-1.1);
+    \draw (0, 0) node[right] { \textbf{SAMPLING}};
+    \draw (0, -0.3) node[right] { Sampling switches $\leftarrow$ close};
+    \draw (0, -0.6) node[right] { $D \leftarrow 0$, $i \leftarrow 0$};
+    \draw (0, -0.9) node[right] { $\text{flag}_{\text{extreme}} \leftarrow 1$};
+\end{scope}
+% COMPARE
+\begin{scope}[xshift=18cm, yshift=0cm]
+    \path [fill=gray!10, draw=black,line width=0.5pt] (0,0.25) rectangle (5.0,-6.8);
+    \draw (0, 0) node[right] { \textbf{SUCCESSIVE APPROXIMATIONS}};
+    \draw (0, -0.3) node[right] { $D \leftarrow D + (v_{top} > v_{bot}) << (N - 1 - i)$};
+    % i = 0
+    \draw (0, -0.6) node[right] { if $i == 0$:};
+    \draw (0.3, -0.9) node[right] { Sampling switches $\leftarrow$ open};
+    \draw (0.3, -1.2) node[right] { $(v_{top} > v_{bot}) \ ? \ \text{flag}_\text{top} \leftarrow 1 : \text{flag}_\text{top} \leftarrow 0 $};
+    \draw (0.3, -1.5) node[right] { $V_a[0] \leftarrow 0.5$};
+    \draw (0.3, -1.8) node[right] { $V_b[1:N-2] \leftarrow [0.5,0.5,...,0.5]$};
+    % i<= N-2
+    \draw (0, -2.1) node[right] { else if $i <= N-2$:};
+        % vtop > vbot
+    \draw (0.3, -2.4) node[right] { if $v_{top} > v_{bot}$:};
+            % flag_extreme
+    \draw (0.6, -2.7) node[right] { if $\text{flag}_\text{extreme}$:};
+    \draw (0.9, -3.0) node[right] { if $i < N - 2: \ V_a[i-1,i] \leftarrow [0,0.5]$};
+    \draw (0.9, -3.3) node[right] { $V_b[i] \leftarrow 1$};
+            % !flag_extreme
+    \draw (0.6, -3.6) node[right] { else:};
+    \draw (0.9, -3.9) node[right] { $V_{a,prev}[i-1] \leftarrow V_a[i-1]$}; % store
+    \draw (0.9, -4.2) node[right] { $V_{b,prev}[i-1] \leftarrow V_b[i-1]$}; % store
+    \draw (0.9, -4.5) node[right] { $V_a[i-1] \leftarrow M, V_b[i-1] \leftarrow M$}; % merge
+    \draw (0.9, -4.8) node[right] { $V_a[i-2] \leftarrow V_{a,prev}[i-2]$}; % load
+    \draw (0.9, -5.1) node[right] { $V_b[i-2] \leftarrow V_{b,prev}[i-2]$}; % load
+        % else
+    \draw (0.3, -5.4) node[right] { else:};
+    \draw (0.6, -5.7) node[right] { $V_{a,prev}[i-1] \leftarrow V_a[i-1]$}; % store
+    \draw (0.6, -6.0) node[right] { $V_{b,prev}[i-1] \leftarrow V_b[i-1]$}; % store
+    \draw (0.6, -6.3) node[right] { $V_a[i-1] \leftarrow M, V_b[i-1] \leftarrow M$}; % merge
+    % if (vtop > vbot XOR flag_top): flag_extreme <- 0
+    \draw (0.3, -6.6) node[right] { if (($v_{top} > v_{bot}) \oplus \text{flag}_\text{top}$) \ : $\text{flag}_\text{extreme} \leftarrow 0$};
+\end{scope}
+\end{scope} % end algorithm
+\end{circuitikz}
+
+

@@ -10,7 +10,12 @@
 
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\usepackage[size=custom,width=120,height=72,scale=1.0]{beamerposter}
+
+% \usepackage[size=custom,width=120,height=72,scale=1.0]{beamerposter}
+\usepackage[scale=1, size=a1, orientation=portrait]{beamerposter}
+% \setlength{\paperwidth}{33.1in}
+% \setlength{\paperheight}{23.4in}
+
 \usetheme{gemini}
 % \usecolortheme{uchicago}
 \usecolortheme{stanford}
@@ -19,6 +24,98 @@
 \usepackage{tikz}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.17}
+
+% Added 
+% \usepackage{cite}
+\usepackage[sort&compress,numbers]{natbib}
+\usepackage[backend=biber, style=ieee]{biblatex}
+\addbibresource{bibliography.bib}
+\renewcommand*{\bibfont}{\footnotesize}
+% Circuitikz
+\usepackage[american]{circuitikz}
+\usepackage{placeins}
+% \renewcommand{\section}{\FloatBarrier\Oldsection}
+
+% Added by LF
+\usepackage{bm}
+% \usepackage{physics} % BraKet notation
+% \usepackage{braket}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepgfplotslibrary{colorbrewer}
+\pgfplotsset{compat=1.17}
+\usetikzlibrary{fit}
+\usetikzlibrary{arrows}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{shapes.callouts}
+\tikzset{
+  level/.style   = { ultra thick, blue },
+  connect/.style = { dashed, red },
+  notice/.style  = { draw, rectangle callout, callout relative pointer={#1} },
+  % cota/.style  = { latex-latex, black, thin, dashed },
+  % cota/.style  = { latex-latex, very thin, black, dashed },
+  % cota/.style  = { <->, very thin, black, dashed, latex-{latex[width=0.1mm]} },
+  cota/.style  = {very thin, black, dashed, {Latex[length=0.5mm]}-{Latex[length=0.5mm]} },
+  cotaa/.style  = {very thin, black, {Latex[length=0.5mm]}-{Latex[length=0.5mm]} },
+  aw/.style  = { -latex, black, thin,  },
+  fine/.style  = { very thin, dashed },
+  finee/.style  = { thin, dashed, darkgray },
+  labell/.style   = { text width=3cm, font=\sffamily\small}
+}
+\usepackage{empheq} % braces for subequations
+\usepackage{cleveref} % cref{label}, Cref{label} to get the section that contains the exercise
+\usepackage[american]{circuitikz} % american/european
+% flat 3D plots
+\usepgfplotslibrary{colormaps}
+\pgfplotsset{compat=newest}
+\pgfplotsset{
+  colormap/twilight/.style={colormap={twilight}{[1pt]
+  rgb(0pt)=(0.8857501584075443, 0.8500092494306783, 0.8879736506427196);
+  rgb(25pt)=(0.38407269378943537, 0.46139018782416635, 0.7309466543290268);
+  rgb(50pt)=(0.18488035509396164, 0.07942573027972388, 0.21307651648984993);
+  rgb(75pt)=(0.6980608153581771, 0.3382897632604862, 0.3220747885521809);
+  rgb(100pt)=(0.8857115512284565, 0.8500218611585632, 0.8857253899008712);
+}}}
+
+\input{styles/packages} % gantt diagram, Josephson junction and others
+\usetikzlibrary{arrows}
+
+\usepackage[caption=false]{subfig}
+
+\usepackage[para]{threeparttable}
+
+% \date{06th March 2023}
+\date{\today}
+
+% Added
+\usepackage{siunitx}
+\usepackage{cleveref}
+\setlength{\tabcolsep}{0.3em} % for the horizontal table padding
+\usepackage{pgfplots}
+\usepgfplotslibrary{colorbrewer}
+\usepackage{tikz}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{calc}
+\usepackage[american]{circuitikz} % american/european
+\usepackage{ifthen}
+\usepackage{moresize}
+
+% Reduce image separation with text
+\setlength{\textfloatsep}{5pt}
+% \usepackage[]{caption}
+\captionsetup[figure]{skip=-10pt}
+\setlength{\abovecaptionskip}{-4pt plus 1pt minus 1pt}
+
+% Get citations in range, [3-6]
+% \usepackage{cite}
+
+% Pseudocode algorithms
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\usepackage{anyfontsize}
+\usepackage{svg}
+
 
 % ====================
 % Lengths
@@ -34,23 +131,25 @@
 \newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
 
 
-\title{Your Title Goes Here}
+% \title{Your Title Goes Here}
+\title{A Simple Zero Average Switching Energy Differential SAR ADC}
 
+\author{Llorenç Fanals-i-Batllori \inst{1}\inst{,*} \and Namit Mishra \inst{1} \and Lorenzo Rota \inst{1} \and Aldo Pena-Perez \inst{1}}
 
-\author{Rylan Schaeffer \inst{1} \and Ben Bitdiddle \inst{2} \and Lem E. Tweakit \inst{2}}
-
-\institute[shortinst]{\inst{1} Department of Computer Science}
-\institute[shortinst]{\inst{1} Computer Science, Stanford \samelineand \inst{2} Another Institute}
+\institute[shortinst]{\inst{1} SLAC National Accelerator Laboratory \samelineand \inst{*} \href{mailto:fanals@slac.stanford.edu}{fanals@slac.stanford.edu} }
 
 % ====================
 % Footer (optional)
 % ====================
 
-\footercontent{
-  \href{rylanschaeffer.github.io}{rylanschaeffer.github.io} \hfill
-  NeurIPS 2021 Workshop: Metacognition in the Age of AI \hfill
-  \href{mailto:rylanschaeffer@gmail.com}{rylanschaeffer@gmail.com}}
-% (can be left out to remove footer)
+% \footercontent{
+%    \href{rylanschaeffer.github.io}{rylanschaeffer.github.io} \hfill
+%    \hfill
+%    IEEE ISCAS 2024 - 19$^{\text{th}}$ to 22$^{\text{th}}$ May, Singapore \hfill
+%   \href{mailto:rylanschaeffer@gmail.com}{rylanschaeffer@gmail.com}}
+% % (can be left out to remove footer)
+
+\footercontent{ \hfill IEEE ISCAS 2024 - 19$^{\text{th}}$ to 22$^{\text{th}}$ May, Singapore \hfill}
 
 % ====================
 % Logo (optional)
@@ -59,6 +158,8 @@
 % use this to include logos on the left and/or right side of the header:
 % \logoright{\includegraphics[height=7cm]{logos/cs-logo-maroon.png}}
 % \logoleft{\includegraphics[height=7cm]{logos/cs-logo-maroon.png}}
+\logoright{\includegraphics[height=6cm]{stanford_logos/iscas24b.png}}
+\logoleft{\includegraphics[height=4cm]{stanford_logos/logo_SLAC.png}}
 
 % ====================
 % Body
@@ -66,263 +167,240 @@
 
 \begin{document}
 
-% This adds the Logos on the top left and top right
-\addtobeamertemplate{headline}{}
-{
-    \begin{tikzpicture}[remember picture,overlay]
-    %   \node [anchor=north west, inner sep=3cm] at ([xshift=0.0cm,yshift=1.0cm]current page.north west)
-    %   {\includegraphics[height=5.0cm]{stanford_logos/Stanford-CS.png}}; % uc-logo-white.eps
-      \node [anchor=north east, inner sep=3cm] at ([xshift=0.0cm,yshift=2.5cm]current page.north east)
-      {\includegraphics[height=7.0cm]{stanford_logos/Block_S_2_color.png}};
-    \end{tikzpicture}
-}
+% % This adds the Logos on the top left and top right
+% \addtobeamertemplate{headline}{}
+% {
+%     \begin{tikzpicture}[remember picture,overlay]
+%     %   \node [anchor=north west, inner sep=3cm] at ([xshift=0.0cm,yshift=1.0cm]current page.north west)
+%     %   {\includegraphics[height=5.0cm]{stanford_logos/Stanford-CS.png}}; % uc-logo-white.eps
+%       \node [anchor=north east, inner sep=3cm] at ([xshift=0.0cm,yshift=2.5cm]current page.north east)
+%       {};
+%     \end{tikzpicture}
+% }
 
 \begin{frame}[t]
 \begin{columns}[t]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \separatorcolumn
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{column}{\colwidth}
 
   \begin{block}{Introduction}
+      % The successive approximation register (SAR) analog-to-digital converter (ADC) has emerged as a dominant architecture for low-power applications. This is attributed to its superior energy efficiency, compact form factor, and seamless compatibility with technology scaling. Nevertheless, recent advancements have notably focused on refining the switching logic to surpass the existing limits in power consumption. Past works such as \cite{Yuan12, Sanyal13, Zhu13, Sanyal13b, Chen14} have demonstrated energy saving beyond the \SI{95}{\percent} with respect to the conventional switching but at the expense of variable common-mode voltages at the comparator inputs. As a consequence, a special comparator design is necessary, restricting the effective resolution. Alternative solutions have addressed this limitation; however, they come with trade-offs such as doubling the capacitor area \cite{Zhu10}, incurring substantial switching energy \cite{Rahimi14}, or halving the input signal amplitude \cite{Xin21}. The methods in \cite{Ding18} and \cite{Yu23} leverage bridge capacitor designs to achieve significant area reduction, yet implementing this solution requires careful layout to minimize undesired couplings around the attenuation capacitor which could otherwise limit the linearity. Remarkable energy savings exceeding \SI{98}{\percent} have been demonstrated in prior works \cite{Wu17, Li20, Hu22, Momeni20} while maintaining common-mode voltage variations and overall performance; however, with recent advancements, it is now achievable to reach \SI{100}{\percent} energy savings. An example of this progress can be found in \cite{Akbari19}; although the capacitive DAC employed in this approach is larger compared to the other techniques discussed here. Similarly, \cite{Yousefi18} accomplishes zero average energy and a reduced capacitance area of \SI{87}{\percent}; nonetheless, the implementation of the switching network and the associated digital logic is complex and requires extra clock cycles to perform the conversion.
 
-    Some block contents, followed by a diagram, followed by a dummy paragraph.
-
-    \begin{figure}
-      \centering
-      \begin{tikzpicture}[scale=6]
-        \draw[step=0.25cm,color=gray] (-1,-1) grid (1,1);
-        \draw (1,0) -- (0.2,0.2) -- (0,1) -- (-0.2,0.2) -- (-1,0)
-          -- (-0.2,-0.2) -- (0,-1) -- (0.2,-0.2) -- cycle;
-      \end{tikzpicture}
-      \caption{A figure caption.}
+    The switching scheme presented here achieves a zero average switching energy with a fully-differential input signal and requires only one clock period per resolved bit. While architectures \cite{Zhu10,Rahimi14,Xin21} and \cite{Wu17,Li20,Hu22}  claim to maintain a constant common-mode voltage, they actually experience a variation when discriminating the least significant bit (LSB). In contrast, the proposed solution introduces a marginal shift for only two specific digital codes during the last transition, representing less than \SI{1}{\percent} of the total amount of cases when considering reasonable resolutions (i.e.,\,$\geq$\,9\,bit).
+    
+    \begin{figure}[t] \centering
+    	\input{tex/labels.tex}
+    	\caption{Generic $N$-bit SAR ADC with labeled binary weighted capacitors and voltages that are set by the SAR logic.}
+        \label{fig:labels}
     \end{figure}
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies
-    eget libero ac ullamcorper. Integer et euismod ante. Aenean vestibulum
-    lobortis augue, ut lobortis turpis rhoncus sed. Proin feugiat nibh a
-    lacinia dignissim. Proin scelerisque, risus eget tempor fermentum, ex
-    turpis condimentum urna, quis malesuada sapien arcu eu purus.
+  \end{block}
+
+
+  \begin{block}{Proposed switching scheme}
+
+      \begin{figure} \centering
+              \centering
+      	    \input{tex/scheme.tex}
+          	\caption{Proposed symmetric switching scheme for a 4-bit SAR ADC. Top sampling is performed. Voltage increments following each transition are visualized at both the top and bottom nodes. The energy values are indicated on the transition arrows, relative to $C V^2 = C$. Up transitions occur when $v_{top} > v_{bot}$.}
+              \label{fig:scheme}
+      \end{figure}
+
+
+      \begin{figure} \centering
+              \centering
+      	    \input{tex/algo.tex}
+              \caption{Proposed switching scheme algorithm in pseudocode. $D$ is the resolved code and $i$ the comparison counter that ranges from $0$ to $N-1$. The $<<$ symbol symbolizes the shift left operation. $M$ indicates merging with its counterpart capacitor. Each arrow symbolizes a transition that occurs at the clock edge.}
+              \label{fig:algo}
+      \end{figure}
 
   \end{block}
 
-  \begin{block}{Background: Metacognition}
-
-    Nam vulputate nunc felis, non condimentum lacus porta ultrices. Nullam sed
-    sagittis metus. Etiam consectetur gravida urna quis suscipit.
-
-    \begin{itemize}
-      \item \textbf{Mauris tempor} risus nulla, sed ornare
-      \item \textbf{Libero tincidunt} a duis congue vitae
-      \item \textbf{Dui ac pretium} morbi justo neque, ullamcorper
-    \end{itemize}
-
-    Eget augue porta, bibendum venenatis tortor.
-
-  \end{block}
   
-    \begin{block}{Background: Reinforcement Learning}
-    
-    \end{block}
-
-  \begin{alertblock}{A highlighted block}
-
-    This block catches your eye, so \textbf{important stuff} should probably go
-    here.
-
-    Curabitur eu libero vehicula, cursus est fringilla, luctus est. Morbi
-    consectetur mauris quam, at finibus elit auctor ac. Aliquam erat volutpat.
-    Aenean at nisl ut ex ullamcorper eleifend et eu augue. Aenean quis velit
-    tristique odio convallis ultrices a ac odio.
-
-    \begin{itemize}
-      \item \textbf{Fusce dapibus tellus} vel tellus semper finibus. In
-        consequat, nibh sed mattis luctus, augue diam fermentum lectus.
-      \item \textbf{In euismod erat metus} non ex. Vestibulum luctus augue in
-        mi condimentum, at sollicitudin lorem viverra.
-      \item \textbf{Suspendisse vulputate} mauris vel placerat consectetur.
-        Mauris semper, purus ac hendrerit molestie, elit mi dignissim odio, in
-        suscipit felis sapien vel ex.
-    \end{itemize}
-
-    Aenean tincidunt risus eros, at gravida lorem sagittis vel. Vestibulum ante
-    ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
-
-  \end{alertblock}
 
 \end{column}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \separatorcolumn
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{column}{\colwidth}
 
-  \begin{block}{A block containing an enumerated list}
+\begin{block}{Switching energy general observations}
 
-    Vivamus congue volutpat elit non semper. Praesent molestie nec erat ac
-    interdum. In quis suscipit erat. \textbf{Phasellus mauris felis, molestie
-    ac pharetra quis}, tempus nec ante. Donec finibus ante vel purus mollis
-    fermentum. Sed felis mi, pharetra eget nibh a, feugiat eleifend dolor. Nam
-    mollis condimentum purus quis sodales. Nullam eu felis eu nulla eleifend
-    bibendum nec eu lorem. Vivamus felis velit, volutpat ut facilisis ac,
-    commodo in metus.
-
+    The energy consumed during the switching process in one capacitor array half $k$ (either top or bottom) between two successive steps, as can be generalized from the energy calculations in \cite{Ginsburg}, is as follows:
+    \begin{equation} \label{eq:e}
+        E_{k} = C V_{0,k} \left( \Delta V_{0,k} - \Delta v_{k} \right) + \sum_{i=0}^{N-3} 2^i C V_{i+1,k} \left( \Delta V_{i+1,k} - \Delta v_{k} \right) \ .
+    \end{equation}
+    
+    
     \begin{enumerate}
-      \item \textbf{Morbi mauris purus}, egestas at vehicula et, convallis
-        accumsan orci. Orci varius natoque penatibus et magnis dis parturient
-        montes, nascetur ridiculus mus.
-      \item \textbf{Cras vehicula blandit urna ut maximus}. Aliquam blandit nec
-        massa ac sollicitudin. Curabitur cursus, metus nec imperdiet bibendum,
-        velit lectus faucibus dolor, quis gravida metus mauris gravida turpis.
-      \item \textbf{Vestibulum et massa diam}. Phasellus fermentum augue non
-        nulla accumsan, non rhoncus lectus condimentum.
+      \item Operating multiple switches simultaneously may actually result in lower energy consumption compared to using a single switch \cite{Xin21}.
+      \item Removing the largest capacitors on the  CDAC has a notable impact on energy usage, particularly during the initial conversions due to the binary weighting configuration\,\cite{Yuan12, Sanyal13, Zhu13}. 
+      \item If $V_{i,\text{k}} = 0$ (i.e., ground or negative reference), its contribution to the total switching energy becomes negligible. 
+      \item When capacitor terminals are merged in a specific sequence as demonstrated in \cite{Xin21} and \cite{Wu17}, their connection becomes independent of voltage references, resulting in zero energy.
     \end{enumerate}
 
-  \end{block}
+\end{block}
 
-  \begin{block}{Fusce aliquam magna velit}
 
-    Et rutrum ex euismod vel. Pellentesque ultricies, velit in fermentum
-    vestibulum, lectus nisi pretium nibh, sit amet aliquam lectus augue vel
-    velit. Suspendisse rhoncus massa porttitor augue feugiat molestie. Sed
-    molestie ut orci nec malesuada. Sed ultricies feugiat est fringilla
-    posuere.
+\begin{block}{Proposed scheme switching energy}
+    For the specific cases of $N=4$ and $N=5$, the transition energies are demonstrated through the following summations:
+    \begin{equation} \label{eq:en}
+    	\begin{aligned}
+    		& E(N=4) = C V^2 \left( - \frac{1}{2} + \frac{1}{4} + \frac{11}{128} \right), \\
+    		& E(N=5) = C V^2 \left( -1 + \frac{1}{2} + \frac{1}{4} + \frac{55}{512} \right). \\
+    	\end{aligned}
+    \end{equation}
+    As can be noticed from \eqref{eq:en}, the presence of a negative term in the first transitions plays a crucial role in minimizing the switching energy. By re-writing the equations in \eqref{eq:en} as a function of $N$, the overall switching energy for an $N$-bit resolution is found to be:
+    \begin{equation} \label{eq:et}
+    	E(N) = - C V^2 \left( 2^{-3} + 2^{-N-1} + 2^{-2N+1} \right) . 
+    \end{equation}
 
-    \begin{figure}
-      \centering
-      \begin{tikzpicture}
-        \begin{axis}[
-            scale only axis,
-            no markers,
-            domain=0:2*pi,
-            samples=100,
-            axis lines=center,
-            axis line style={-},
-            ticks=none]
-          \addplot[red] {sin(deg(x))};
-          \addplot[blue] {cos(deg(x))};
+\end{block}
+
+
+\begin{block}{Behavioral simulations}
+    \begin{figure} \centering
+       \begin{tikzpicture}
+    	   % red, blue, green, darkgray, orange, purple, brown, black, gray, olive, teal
+        \begin{axis}[width=16cm, height=10cm, legend style={at={(0,1.0)}, legend columns=5, anchor=south west}, ylabel={\textit{Amplitude (\SI{}{\V})}}, xlabel={\textit{Time (\SI{}{\us})}}, grid=minor, enlarge x limits=false, every axis y label/.style={at={(ticklabel cs:0.5)},rotate=90,anchor=near ticklabel}, x filter/.code={\pgfmathmultiply{#1}{1000000}}]
+    
+            \addplot[mark=none, mark size = 1.5pt, line width=1.0pt, color=black] table [each nth point=1, x={t}, y={vcip_pseudo}, col sep=comma] {data_simulator_new/ADC_S3_waveforms_veriloga.csv};
+            \addlegendentry{\scriptsize{CDAC} $v_{top}$}
+            \addplot[mark=none, mark size = 1.5pt, line width=1.0pt, color=gray] table [each nth point=1, x={t}, y={vcin_pseudo}, col sep=comma] {data_simulator_new/ADC_S3_waveforms_veriloga.csv};
+            \addlegendentry{\scriptsize{CDAC} $v_{bot}$}
+            \addplot[mark=none, dashed, mark size = 1.5pt, line width=0.75pt, color=black] table [each nth point=1, x={t}, y={vinp}, col sep=comma] {data_simulator_new/ADC_S3_waveforms_veriloga.csv};
+            \addlegendentry{\scriptsize $v_{i,top}$}
+            \addplot[mark=none, dashed, mark size = 1.5pt, line width=0.75pt, color=gray] table [each nth point=1, x={t}, y={vinn}, col sep=comma] {data_simulator_new/ADC_S3_waveforms_veriloga.csv};
+            \addlegendentry{\scriptsize $v_{i,bot}$}
+            \addplot[mark=none, mark size = 0.5pt, line width=.5pt,  color=gray] table [each nth point=1, x={t}, y={vcm}, col sep=comma] {data_simulator_new/ADC_S3_waveforms_veriloga.csv};
+            \addlegendentry{\scriptsize $V_{cm}$}
+    
         \end{axis}
-      \end{tikzpicture}
-      \caption{Another figure caption.}
+        \end{tikzpicture}
+        \caption{Behavioral simulation of the proposed SAR ADC with a sinusoidal input signal. The displayed waveforms show the transient response of the CDAC ($v_{top}$, $v_{bot}$), the input signals ($v_{i,top}$, $v_{i,bot}$) and common-mode voltage ($V_{cm}$) for a few conversion cycles. The clock frequency is set at \SI{160}{\MHz}, with $4$ clock cycles allocated to sampling, $2$ for idle states, and $10$ for the actual switching operation. This configuration yields a sampling rate of \SI{10}{\,MSPS}.}
+        \label{fig:comp_inputs}
+    \end{figure}
+
+
+    \begin{figure}[t] \centering
+       \begin{tikzpicture}
+        \begin{axis}[width=16cm, height=10cm, ylabel={\textit{PSD (\SI{}{\dB})}}, xlabel={\textit{Frequency (\SI{}{\MHz})}}, grid=major, enlarge x limits=false, every axis y label/.style={at={(ticklabel cs:0.5)},rotate=90,anchor=near ticklabel}, x filter/.code={\pgfmathdivide{#1}{1000000}}]
+            \addplot[mark=none, mark size = 1.5pt, line width=0.7pt, color=gray] table [each nth point=1, x={freq}, y={db20}, col sep=comma] {data_simulator_new/ADC_S3_psd_norm_veriloga.csv};
+        \end{axis}
+        \end{tikzpicture}
+        \caption{Power spectral density (PSD) of the proposed 10-bit SAR ADC with a sinusoidal input signal of \SI{0.395}{\V} and \SI{\sim302.74}{\kHz} frequency. The simulated SQNDR is 62 dB, aligning with an ideal 10-bit resolution. The sampling rate is \SI{10}{\,MSPS} with 1024 FFT points.}
+        \label{fig:psd}
+    \end{figure}
+
+\end{block}
+
+
+\end{column}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\separatorcolumn
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{column}{\colwidth}
+
+    \def\datasetED{datasets_/ED_expanded.csv}
+    
+    \begin{block}{Comparison}
+
+    This section provides a comparison between the proposed switching scheme of \Cref{fig:scheme} and state-of-the-art 10-bit SAR ADC solutions. \label{sec:comp}\Cref{tab:comp} summarizes the performance metrics, focusing on recent techniques that exhibit exceptionally low energy switching: $E/(C V^2)<32$. The comparison specifically emphasizes architectures utilizing binary weighted configurations without the use of bridge capacitor techniques and, similar to other schemes considered in this analysis, the parasitic capacitors and energy consumed during the reset phase are not taken into account. The conventional SAR is used as the standard reference to assess energy and area efficiency for all techniques. It is worth mentioning that the switching energy is influenced by the input analog value. While \Cref{tab:comp} displays the expected switching energy of multiple switchig techniques assuming all input values are equally probable, \Cref{fig:ed} shows $E(D)$, i.e., the energy for each digital output code.
+    % highlights the comparison of a 10-bit SAR ADC across different techniques and with the actual accumulated switching energy,
+    
+    \vspace{0.2cm}
+    \begin{table}[t] \small
+    \caption{Comparison with recent solutions for 10-bit SAR ADC.}
+    \begin{threeparttable}
+    \centering
+    \begin{tabular}{|c||c|c|c|c|c|c|} \hline
+                      &\shortstack{Avg. Energy\\$E/(CV^2)$} &\shortstack{$E$ Saving\\(\%)} &\shortstack{Capacitor\\DAC} &\shortstack{Area Red.\\(\%)} &\shortstack{$V_{\text{cm}}$\\Variation} &\shortstack{\#\\Ref.}  \\ \hline
+    \cite{Zhu13}      & 31.88     & 97.66       & 512         & 75          & 0.5Vref (High)       & 3\\ \hline
+    \cite{Sanyal13}   & 21.30     & 98.40       & 512         & 75          & 0.75Vref (Very high)  & 2\\ \hline
+    \cite{Wu17}       & 21.30     & 98.40       & 512         & 75          & 0.5LSB (Low)         & 2\\ \hline
+    \cite{Li20}       & 21.08     & 98.45       & 512         & 75          & 0.5LSB (Low)         & 3\\ \hline
+    \cite{Hu22}       & 21.08     & 98.45       & 512         & 75          & 0.5LSB (Low)         & 3\\ \hline
+    \cite{Akbari19}   & 0         & 100         & 1532       & 25.19          & $< 0.25$Vref (High)        & 3\\ \hline
+    \cite{Yousefi18}  & 0\,\tnote{1}         & 100         & 248        & 87.89 & 0               & 3\\ \hline
+    \textbf{This} &\textbf{-0.12549} &\textbf{100} &\textbf{512} &\textbf{75} &\textbf{0.5LSB (Very low)}\,\tnote{2} &\textbf{3}\\ \hline
+    \end{tabular}
+        \begin{tablenotes}
+            \item [1] \footnotesize{It requires a more complex digital logic implementation and additional clock cycles during conversion.} \\
+            \item [2] \footnotesize{$0.5$ LSB in the $2$ most extreme cases out of $2^{N-1}$ cases, $0$ LSB in the rest. No additional clocks.}
+        \end{tablenotes}
+    \vspace{0.1cm}
+    \label{tab:comp}
+    \end{threeparttable}
+    \end{table}
+
+
+     \begin{figure}[t] \centering
+       \begin{tikzpicture}
+    	   % red, blue, green, darkgray, orange, purple, brown, black, gray, olive, teal
+        \begin{axis}[width=16cm, height=10cm, legend style={at={(0,1.0)}, legend columns=6, anchor=south west}, ylabel={\textit{Switching Energy ($E / C V^2$)}}, xlabel={\textit{Output Code ($D$)}}, grid=major, enlarge x limits=false, every axis y label/.style={at={(ticklabel cs:0.5)},rotate=90,anchor=near ticklabel}, mark size = 1.5pt ]
+    
+            \addplot[mark=pentagon, mark size = 1.5pt, color=gray] table [each nth point=7, x=D, y={Chen}, col sep=comma] {\datasetED}; \addlegendentry{\scriptsize\cite{Chen14}}
+            %
+            \addplot[mark=star, mark size = 1.5pt, color=gray] table [each nth point=7, x=D, y={Zhu}, col sep=comma] {\datasetED}; \addlegendentry{\scriptsize\cite{Zhu10}}
+            %
+            \addplot[mark=o, mark size = 1.5pt, color=gray] table [each nth point=7, x=D, y={Rahimi}, col sep=comma] {\datasetED}; \addlegendentry{\scriptsize\cite{Rahimi14}}
+            %
+            \addplot[mark=otimes, mark size = 1.5pt, color=gray] table [each nth point=7, x=D, y={Sanyal}, col sep=comma] {\datasetED}; \addlegendentry{\scriptsize\cite{Sanyal13b}}
+            %
+            \addplot[mark=x, mark size = 1.5pt, color=gray] table [each nth point=7, x=D, y={Yuan11}, col sep=comma] {\datasetED}; \addlegendentry{\scriptsize\cite{Yuan12}}
+            %
+            \addplot[mark=oplus, mark size = 1.5pt, color=gray] table [each nth point=7, x=D, y={ZZhu}, col sep=comma] {\datasetED}; \addlegendentry{\scriptsize\cite{Zhu13}}
+            %
+            \addplot[mark=asterisk, mark size = 1.5pt, color=gray] table [each nth point=7, x=D, y={Li}, col sep=comma] {\datasetED}; \addlegendentry{\scriptsize\cite{Li20}}
+            %
+            \addplot[mark=diamond, mark size = 1.5pt, color=gray] table [each nth point=7, x=D, y={Sanyal_98}, col sep=comma] {\datasetED}; \addlegendentry{\scriptsize\cite{Sanyal13}}
+            %
+            \addplot[mark=square, mark size = 1.25pt, color=gray] table [each nth point=20, x=D, y={Akbari}, col sep=comma] {\datasetED}; \addlegendentry{\scriptsize\cite{Akbari19}}
+            %
+            \addplot[mark=|, mark size = 1.25pt, color=gray] table [each nth point=20, x=D, y={Yousefi}, col sep=comma] {\datasetED}; \addlegendentry{\scriptsize\cite{Yousefi18}}
+    
+            \addplot[mark=none, mark size = .75pt, color=black, line width=1.75pt] table [each nth point=7, x=D, y={S3}, col sep=comma] {\datasetED}; \addlegendentry{\textbf{\scriptsize{This work}}}
+    
+        \end{axis}
+        \end{tikzpicture}
+        \caption{$E(D)$ comparison with state-of-the-art 10-bit SAR ADCs.}
+        \label{fig:ed}
     \end{figure}
 
   \end{block}
 
-  \begin{block}{Nam cursus consequat egestas}
 
-    Nulla eget sem quam. Ut aliquam volutpat nisi vestibulum convallis. Nunc a
-    lectus et eros facilisis hendrerit eu non urna. Interdum et malesuada fames
-    ac ante \textit{ipsum primis} in faucibus. Etiam sit amet velit eget sem
-    euismod tristique. Praesent enim erat, porta vel mattis sed, pharetra sed
-    ipsum. Morbi commodo condimentum massa, \textit{tempus venenatis} massa
-    hendrerit quis. Maecenas sed porta est. Praesent mollis interdum lectus,
-    sit amet sollicitudin risus tincidunt non.
 
-    Etiam sit amet tempus lorem, aliquet condimentum velit. Donec et nibh
-    consequat, sagittis ex eget, dictum orci. Etiam quis semper ante. Ut eu
-    mauris purus. Proin nec consectetur ligula. Mauris pretium molestie
-    ullamcorper. Integer nisi neque, aliquet et odio non, sagittis porta justo.
+  % \begin{alertblock}{alert}
+  % \end{alertblock}
 
-    \begin{itemize}
-      \item \textbf{Sed consequat} id ante vel efficitur. Praesent congue massa
-        sed est scelerisque, elementum mollis augue iaculis.
-        \begin{itemize}
-          \item In sed est finibus, vulputate
-            nunc gravida, pulvinar lorem. In maximus nunc dolor, sed auctor eros
-            porttitor quis.
-          \item Fusce ornare dignissim nisi. Nam sit amet risus vel lacus
-            tempor tincidunt eu a arcu.
-          \item Donec rhoncus vestibulum erat, quis aliquam leo
-            gravida egestas.
-        \end{itemize}
-      \item \textbf{Sed luctus, elit sit amet} dictum maximus, diam dolor
-        faucibus purus, sed lobortis justo erat id turpis.
-      \item \textbf{Pellentesque facilisis dolor in leo} bibendum congue.
-        Maecenas congue finibus justo, vitae eleifend urna facilisis at.
-    \end{itemize}
-
+  \begin{block}{Summary and future work}
   \end{block}
 
-\end{column}
-
-\separatorcolumn
-
-\begin{column}{\colwidth}
-
-  \begin{block}{A block containing some math}
-
-    Nullam non est elit. In eu ornare justo. Maecenas porttitor sodales lacus,
-    ut cursus augue sodales ac.
-
-    $$
-    \int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt{\pi}
-    $$
-
-    Interdum et malesuada fames $\{1, 4, 9, \ldots\}$ ac ante ipsum primis in
-    faucibus. Cras eleifend dolor eu nulla suscipit suscipit. Sed lobortis non
-    felis id vulputate.
-
-    \heading{A heading inside a block}
-
-    Praesent consectetur mi $x^2 + y^2$ metus, nec vestibulum justo viverra
-    nec. Proin eget nulla pretium, egestas magna aliquam, mollis neque. Vivamus
-    dictum $\mathbf{u}^\intercal\mathbf{v}$ sagittis odio, vel porta erat
-    congue sed. Maecenas ut dolor quis arcu auctor porttitor.
-
-    \heading{Another heading inside a block}
-
-    Sed augue erat, scelerisque a purus ultricies, placerat porttitor neque.
-    Donec $P(y \mid x)$ fermentum consectetur $\nabla_x P(y \mid x)$ sapien
-    sagittis egestas. Duis eget leo euismod nunc viverra imperdiet nec id
-    justo.
-
-  \end{block}
-
-  \begin{block}{Nullam vel erat at velit convallis laoreet}
-
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-    inceptos himenaeos. Phasellus libero enim, gravida sed erat sit amet,
-    scelerisque congue diam. Fusce dapibus dui ut augue pulvinar iaculis.
-
-    \begin{table}
-      \centering
-      \begin{tabular}{l r r c}
-        \toprule
-        \textbf{First column} & \textbf{Second column} & \textbf{Third column} & \textbf{Fourth} \\
-        \midrule
-        Foo & 13.37 & 384,394 & $\alpha$ \\
-        Bar & 2.17 & 1,392 & $\beta$ \\
-        Baz & 3.14 & 83,742 & $\delta$ \\
-        Qux & 7.59 & 974 & $\gamma$ \\
-        \bottomrule
-      \end{tabular}
-      \caption{A table caption.}
-    \end{table}
-
-    Donec quis posuere ligula. Nunc feugiat elit a mi malesuada consequat. Sed
-    imperdiet augue ac nibh aliquet tristique. Aenean eu tortor vulputate,
-    eleifend lorem in, dictum urna. Proin auctor ante in augue tincidunt
-    tempor. Proin pellentesque vulputate odio, ac gravida nulla posuere
-    efficitur. Aenean at velit vel dolor blandit molestie. Mauris laoreet
-    commodo quam, non luctus nibh ullamcorper in. Class aptent taciti sociosqu
-    ad litora torquent per conubia nostra, per inceptos himenaeos.
-
-    Nulla varius finibus volutpat. Mauris molestie lorem tincidunt, iaculis
-    libero at, gravida ante. Phasellus at felis eu neque suscipit suscipit.
-    Integer ullamcorper, dui nec pretium ornare, urna dolor consequat libero,
-    in feugiat elit lorem euismod lacus. Pellentesque sit amet dolor mollis,
-    auctor urna non, tempus sem.
-
+  \begin{block}{Acknowledgements}
   \end{block}
 
   \begin{block}{References}
 
-    \nocite{*}
-    \footnotesize{\bibliographystyle{plain}\bibliography{poster}}
+    % \nocite{*}
+    % % \footnotesize{\bibliographystyle{plain}\bibliography{poster}}
+    \footnotesize{\printbibliography}
 
   \end{block}
 
 \end{column}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \separatorcolumn
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \end{columns}
 \end{frame}
 
