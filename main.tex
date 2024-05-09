@@ -149,7 +149,7 @@
 %   \href{mailto:rylanschaeffer@gmail.com}{rylanschaeffer@gmail.com}}
 % % (can be left out to remove footer)
 
-\footercontent{ \hfill IEEE ISCAS 2024 - 19$^{\text{th}}$ to 22$^{\text{th}}$ May, Singapore \hfill}
+\footercontent{ \hfill IEEE ISCAS 2024 - May 19 to 22, Singapore \hfill}
 
 % ====================
 % Logo (optional)
@@ -200,6 +200,15 @@ The proposed switching scheme achieves a zero average switching energy with a fu
 
   \begin{block}{Proposed switching scheme}
 
+    \begin{itemize}
+      \item Symmetric operation.
+      \item Zero energy during successive approximations.
+      \item Almost constant common-mode voltage.
+      \item Compact capacitive DAC.
+      \item No additional clock cycles.
+    \end{itemize}
+    \vspace{-1cm}
+
       \begin{figure} \centering
               \centering
       	    \input{tex/scheme.tex}
@@ -207,6 +216,9 @@ The proposed switching scheme achieves a zero average switching energy with a fu
               \label{fig:scheme}
       \end{figure}
 
+  \end{block}
+
+  \begin{block}{Proposed switching scheme algorithm}
 
       \begin{figure} \centering
               \centering
@@ -233,7 +245,7 @@ The proposed switching scheme achieves a zero average switching energy with a fu
     \begin{equation} \label{eq:e}
         E_{k} = C V_{0,k} \left( \Delta V_{0,k} - \Delta v_{k} \right) + \sum_{i=0}^{N-3} 2^i C V_{i+1,k} \left( \Delta V_{i+1,k} - \Delta v_{k} \right) \ .
     \end{equation}
-    Some main observations can be derived from this: 
+    Some main design strategies can be derived from this: 
     \begin{enumerate}
       \item Operating multiple switches simultaneously may actually result in lower energy consumption compared to using a single switch \cite{Xin21}.
       \item Removing the largest capacitors on the  CDAC has a notable impact on energy usage, particularly during the initial conversions due to the binary weighting configuration\,\cite{Yuan12, Sanyal13, Zhu13}. 
@@ -317,7 +329,7 @@ The proposed switching scheme achieves a zero average switching energy with a fu
     
     \begin{block}{Comparison}
 
-    This section provides a comparison between the proposed switching scheme of \Cref{fig:scheme} and state-of-the-art 10-bit SAR ADC solutions. \label{sec:comp}\Cref{tab:comp} compares the performance metrics against techniques with low energy switching: $E/(C V^2)<32$. The comparison specifically emphasizes architectures utilizing binary weighted configurations without the use of bridge capacitor techniques. Similar to other schemes considered in this analysis, parasitic capacitors and energy consumed during the reset phase are not considered. The conventional SAR is used as the standard reference. \Cref{tab:comp} displays the expected switching energy of multiple switchig techniques and \Cref{fig:ed} shows $E(D)$, i.e., the energy for each digital output code.
+    The section compares the proposed switching scheme of \Cref{fig:scheme} with state-of-the-art 10-bit SAR ADC solutions. \label{sec:comp}\Cref{tab:comp} showcases the performance metrics against techniques with low energy switching: $E/(C V^2)<32$. The comparison specifically emphasizes architectures utilizing binary weighted configurations without the use of bridge capacitor techniques. Similar to other schemes presented in this analysis, parasitic capacitors and energy consumed during the reset phase are not considered. The conventional SAR is used as the standard reference. \Cref{tab:comp} displays the expected switching energy of multiple switchig techniques and \Cref{fig:ed} shows $E(D)$, i.e., the energy for each digital output code.
     % highlights the comparison of a 10-bit SAR ADC across different techniques and with the actual accumulated switching energy,
     
     \vspace{0.2cm}
@@ -349,7 +361,7 @@ The proposed switching scheme achieves a zero average switching energy with a fu
      \begin{figure}[t] \centering
        \begin{tikzpicture}
     	   % red, blue, green, darkgray, orange, purple, brown, black, gray, olive, teal
-        \begin{axis}[width=16cm, height=9cm, legend style={at={(0,1.0)}, legend columns=6, anchor=south west}, ylabel={\textit{Switching Energy ($E / C V^2$)}}, xlabel={\textit{Output Code ($D$)}}, grid=major, enlarge x limits=false, every axis y label/.style={at={(ticklabel cs:0.5)},rotate=90,anchor=near ticklabel}, mark size = 1.5pt ]
+        \begin{axis}[width=16.75cm, height=11cm, legend style={at={(0,1.0)}, legend columns=6, anchor=south west}, ylabel={\textit{Switching Energy ($E / C V^2$)}}, xlabel={\textit{Output Code ($D$)}}, grid=major, enlarge x limits=false, every axis y label/.style={at={(ticklabel cs:0.5)},rotate=90,anchor=near ticklabel}, mark size = 1.5pt ]
     
             \addplot[mark=pentagon, mark size = 1.5pt, color=gray] table [each nth point=7, x=D, y={Chen}, col sep=comma] {\datasetED}; \addlegendentry{\scriptsize\cite{Chen14}}
             %
@@ -371,7 +383,7 @@ The proposed switching scheme achieves a zero average switching energy with a fu
             %
             \addplot[mark=|, mark size = 1.25pt, color=gray] table [each nth point=20, x=D, y={Yousefi}, col sep=comma] {\datasetED}; \addlegendentry{\scriptsize\cite{Yousefi18}}
     
-            \addplot[mark=none, mark size = .75pt, color=black, line width=1.75pt] table [each nth point=7, x=D, y={S3}, col sep=comma] {\datasetED}; \addlegendentry{\textbf{\scriptsize{This work}}}
+            \addplot[mark=none, mark size = .75pt, color=black, line width=2.5pt] table [each nth point=7, x=D, y={S3}, col sep=comma] {\datasetED}; \addlegendentry{\textbf{\scriptsize{This work}}}
     
         \end{axis}
         \end{tikzpicture}
@@ -388,11 +400,12 @@ The proposed switching scheme achieves a zero average switching energy with a fu
 
   \begin{block}{Summary and future work}
       A simple SAR ADC with zero average switching energy has been introduced. The proposed scheme keeps a constant common-mode voltage, minimizes the capacitor area and requires only one clock per transition.
-      Each individual cell of the SAR is prepared for implementation at the transistor level, and as part of future development, exploration of a 28nm CMOS process is underway.
+      Each individual cell of the SAR is prepared for implementation at the transistor level, and as part of future development, exploration of a 28nm CMOS process is underway. 
+      It has been demonstrated that by carefully selecting connections at the capacitor terminals a simple architecture achieves a zero power consumption during the successive approximations conversion phase.
   \end{block}
 
-  \begin{block}{Acknowledgements}
-  \end{block}
+  % \begin{block}{Acknowledgements}
+  % \end{block}
 
   \begin{block}{References}
 
