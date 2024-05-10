@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1715017699.00318 "main.bcf" "main.bbl" "main" 1715278767.49044 0
+["biber main"] 1715017699.00318 "main.bcf" "main.bbl" "main" 1715362173.3583 0
   "bibliography.bib" 1715017698.72123 7887 71aaacec96dca7820910ba973207ed5e ""
-  "main.bcf" 1715278766.85085 109006 88370c53c472de245d913eba4dbb4b14 "pdflatex"
+  "main.bcf" 1715362172.73186 109006 88370c53c472de245d913eba4dbb4b14 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1715278759.06712 "main.tex" "main.pdf" "main" 1715278767.49073 2
+["pdflatex"] 1715362164.93654 "main.tex" "main.pdf" "main" 1715362173.35857 2
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1202520719 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -427,12 +427,12 @@
   "data_simulator_new/ADC_S3_psd_norm_veriloga.csv" 1697333850 12298 58ac6f82f2af6e94d37cc591b977a31c ""
   "data_simulator_new/ADC_S3_waveforms_veriloga.csv" 1697333850 137346 ba3ede3a238a0dd99da42407320ba076 ""
   "datasets_/ED_expanded.csv" 1697333850 221666 f47fcab27b548246c337888d68de02b1 ""
-  "main.aux" 1715278766.84745 5166 3ed9ccad8006b5f0405d8a1fb2ca7070 "pdflatex"
+  "main.aux" 1715362172.72864 5166 3ed9ccad8006b5f0405d8a1fb2ca7070 "pdflatex"
   "main.bbl" 1715017700.29836 24790 8489d12190f5cadedc56f83b30ba466f "biber main"
-  "main.nav" 1715278766.85159 459 6178c6f2f031b07114cdfe9fc0797420 "pdflatex"
-  "main.out" 1715278766.8485 93 aea4b6a8ae45636c75679c2f0dfa4493 "pdflatex"
-  "main.run.xml" 1715278766.85152 2404 e448bd39f241edac993cdd8a8bf2c7e0 "pdflatex"
-  "main.tex" 1715278757.08998 24179 e80086eed9454c6dce61f4fd024d6c93 ""
+  "main.nav" 1715362172.7325 459 6178c6f2f031b07114cdfe9fc0797420 "pdflatex"
+  "main.out" 1715362172.72963 93 aea4b6a8ae45636c75679c2f0dfa4493 "pdflatex"
+  "main.run.xml" 1715362172.73243 2404 e448bd39f241edac993cdd8a8bf2c7e0 "pdflatex"
+  "main.tex" 1715362163.70402 24188 8be396ab99cbff2826509dc22203dddd ""
   "stanford_logos/iscas24b.png" 1715012930.85013 46343169 43ab36a3695c503144f6519f847c5775 ""
   "stanford_logos/logo_SLAC.png" 1714949061.85518 318308 03cd24944681ee957d8e4c6113dd2da4 ""
   "styles/packages.tex" 1714958652.56585 5644 3f3adb2c5ebb78a0f76ddce2f0da1908 ""
