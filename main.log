@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.19)  10 MAY 2024 10:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.19)  14 MAY 2024 14:48
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1439,8 +1439,8 @@ LaTeX Font Info:    ... okay on input line 168.
 * modes: includehead includefoot 
 * h-part:(L,W,R)=(28.45274pt, 1633.18803pt, 28.45274pt)
 * v-part:(T,H,B)=(0.0pt, 2392.87694pt, 0.0pt)
-* \paperwidth=1690.09352pt
-* \paperheight=2392.87694pt
+* \paperwidth=1691.11755pt
+* \paperheight=2392.13744pt
 * \textwidth=1633.18803pt
 * \textheight=2364.42421pt
 * \oddsidemargin=-43.81725pt
@@ -1847,7 +1847,7 @@ LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <6> not available
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <5> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 95.
 
-Overfull \hbox (4.92265pt too wide) in paragraph at lines 145--146
+Overfull \hbox (4.61543pt too wide) in paragraph at lines 145--146
  [] 
  []
 
@@ -11848,7 +11848,7 @@ NOTE: coordinate (1020.0,10.66455078125) has been dropped because of a coordinat
 NOTE: coordinate (1021.0,10.66455078125) has been dropped because of a coordinate filter. (see also unbounded coords=jump). 
 NOTE: coordinate (1023.0,10.416015625) has been dropped because of a coordinate filter. (see also unbounded coords=jump). 
 
-Overfull \hbox (6.17569pt too wide) in paragraph at lines 425--425
+Overfull \hbox (5.86847pt too wide) in paragraph at lines 425--425
  [] 
  []
 
@@ -11886,6 +11886,10 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 42
 (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
+Overfull \hbox (0.99818pt too wide) detected at line 425
+[][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][] 
+ []
+
 ./main.tex:425: Undefined control sequence.
 \beamer@thmffamily@headline ->\Raleway 
                                        
@@ -11916,6 +11920,11 @@ File: stanford_logos/iscas24b.png Graphic file (type png)
 <use stanford_logos/iscas24b.png>
 Package pdftex.def Info: stanford_logos/iscas24b.png  used on input line 425.
 (pdftex.def)             Requested size: 478.28404pt x 170.71652pt.
+
+Overfull \hbox (1.02403pt too wide) has occurred while \output is active
+[]
+ []
+
 ./main.tex:425: Undefined control sequence.
 \beamer@thmffamily@footline ->\Raleway 
                                        
@@ -11937,6 +11946,11 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (1.02403pt too wide) has occurred while \output is active
+[] 
+ []
 
 [1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}
 
@@ -11962,15 +11976,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 78182 strings out of 474116
- 1996615 string characters out of 5743682
- 4764416 words of memory out of 5000000
- 99450 multiletter control sequences out of 15000+600000
+ 78252 strings out of 474116
+ 1998954 string characters out of 5743682
+ 4766057 words of memory out of 5000000
+ 99520 multiletter control sequences out of 15000+600000
  942922 words of font info for 306 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,24n,123p,2055b,3537s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsso12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsso17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsso9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (1 page, 4325957 bytes).
+Output written on main.pdf (1 page, 4325842 bytes).
 PDF statistics:
  240 PDF objects out of 1000 (max. 8388607)
  170 compressed objects within 2 object streams
